@@ -1,125 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranga:wght@700&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ranga:wght@700&family=Roboto&display=swap");
 /*font-family: 'Ranga', cursive;*/
 /*font-family: 'Roboto', sans-serif;*/
 
 @font-face {
-    font-family: GodoWar;
-    src: url('../fonts/GODOFWAR.TTF');
+  font-family: GodoWar;
+  src: url("../fonts/GODOFWAR.TTF");
 }
 
 .header {
-    width: 100%;
-    height: 80px !important;
-    line-height: 80px;
-    background: url(../images/header_bg.png);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 100;
+  width: 100%;
+  height: 80px !important;
+  line-height: 80px;
+  background: url(../images/header_bg.png);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
 }
 .header__logo img {
-    height: 60px;
+  height: 60px;
 }
 .header__menu ul {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .header__menu li {
-    display: inline-block;
-    margin-right: 30px;
+  display: inline-block;
+  margin-right: 30px;
 }
 .header__menu li a {
-    font-family: Ranga;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
+  font-family: Ranga;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header__menu li a.active {
-    color: #ffa300;
+  color: #ffa300;
 }
 .header__menu li a .docs__icon {
-    width: 17px;
-    height: 17px;
-    margin-left: 5px;
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
 }
 .content {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 /** General **/
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .bg-main {
-    background-image: url('../images/background.png');
-    background-size: cover;
+  background-image: url("../images/background.png");
+  background-size: cover;
 }
 /****/
 .nfts-item {
-    padding: 50px 0;
-    position: relative;
+  padding: 50px 0;
+  position: relative;
 }
 .nfts-item:before {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: url('../images/goldmine.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 8%;
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: url("../images/goldmine.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 8%;
 }
 .heading__default {
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: center;
-    color: #FFF;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
 }
 .heading__label {
-    font-family: GodoWar;
-    margin: 0 0 15px;
-    font-size: 54px;
-    text-transform: uppercase;
+  font-family: GodoWar;
+  margin: 0 0 15px;
+  font-size: 54px;
+  text-transform: uppercase;
 }
 .heading__intro {
-    font-size: 20px;
+  font-size: 20px;
 }
 .nfts-item__image figure {
-    margin: 10px auto;
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
+  margin: 10px auto;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 .nfts-item__slider .owl-dots {
-    margin: 30px 0 0;
-    display: flex;
-    justify-content: center;
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: center;
 }
 .nfts-item__slider .owl-dots > div {
-    margin: 0 10px;
-    width: 120px;
-    height: 8px;
-    display: inline-block;
-    background-color: #532C68;
-    border-radius: 10px;
+  margin: 0 10px;
+  width: 120px;
+  height: 8px;
+  display: inline-block;
+  background-color: #532c68;
+  border-radius: 10px;
 }
 .nfts-item__slider .owl-dots > div.active {
-    background-color: #D97CCB;
+  background-color: #d97ccb;
 }
 
 /****/
 .home-item {
-    padding: 50px 0;
+  padding: 50px 0;
+}
+
+/**Social button**/
+#social {
+  position: fixed;
+  right: 0px;
+  top: 0px;
 }
