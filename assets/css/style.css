@@ -127,6 +127,9 @@ body {
   margin: 0 0 15px;
   font-size: 54px;
   text-transform: uppercase;
+  background: -webkit-linear-gradient(#FDD984, #A38252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heading__intro {
   font-size: 20px;
@@ -149,8 +152,8 @@ body {
 .owl-nav {
   color: #FFF;
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 50px;
+  right: 50px;
   bottom: -5px;
   display: flex;
   justify-content: space-between;
@@ -188,4 +191,125 @@ body {
 .align-items-center {
   display: flex;
   align-items: center;
+}
+
+.gameplay__item--inner {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.gameplay__image figure {
+  margin: 0 30px 0 0;
+  width: 350px;
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gameplay__slider {
+  margin: 20px 0 0;
+}
+.gameplay__item--content {
+  text-align: center;
+}
+.gameplay__item--content h3 {
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+.gameplay__item--content span {
+  font-weight: 600;
+}
+.gameplay__item--content p {
+  margin: 15px 0 0;
+}
+
+.team__item {
+  text-align: center;
+  color: #FFF;
+}
+.team__slider {
+  margin: 30px 0 0;
+}
+.team__image figure {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px auto;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #4ca9ff;
+}
+.team__name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/**Partner**/
+.partner-item__inner .developer__logo {
+  margin: 25px 0 25px;
+}
+.partner-item__inner .developer__logo img {
+  height: 145px;
+}
+
+/**Social button**/
+#socials {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 0 0 10px;
+  padding: 8px;
+  z-index: 10;
+}
+#socials a {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  background-color: #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+}
+
+#socials a i {
+  font-size: 25px;
+  vertical-align: middle;
+  color: #fff;
+}
+#socials a.facebook {
+  background: linear-gradient(
+          225deg,
+          #4676ed 7.48%,
+          #436de4 23.24%,
+          #3c55cd 48.89%,
+          #302ea8 81.05%,
+          #2b1e99 92.52%
+  );
+}
+#socials a.twitter {
+  background: linear-gradient(225deg, #33ccff 7.48%, #337fff 92.52%);
+}
+#socials a.youtube {
+  background: linear-gradient(225deg, #ff0000 7.48%, #850000 92.52%);
+}
+#socials a.instagram {
+  background: linear-gradient(
+          225deg,
+          #fbe18a -1.14%,
+          #fcbb45 25.93%,
+          #f75274 47.65%,
+          #d53692 66.79%,
+          #8f39ce 94.81%,
+          #5b4fe9 128.68%
+  );
 }

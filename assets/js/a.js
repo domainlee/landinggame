@@ -116,6 +116,49 @@
             margin: 10,
         });
 
+        var gameplay__js = $(".gameplay__js");
+        gameplay__js.owlCarousel({
+            nav : true,
+            dots: true,
+            singleItem : true,
+            navText: [
+                "<i class='fa fa-angle-left'></i> Previous",
+                "Next <i class='fa fa-angle-right'></i>"
+            ],
+            lazyLoad: true,
+            autoplay : 100,
+            autoplaySpeed: 400,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            slideSpeed: 100,
+            items: 1,
+            loop: true,
+            margin: 0,
+        });
+
+
+        var team__js = $(".team__js");
+        team__js.owlCarousel({
+            nav : true,
+            dots: true,
+            singleItem : true,
+            navText: [
+                "<i class='fa fa-angle-left'></i> Previous",
+                "Next <i class='fa fa-angle-right'></i>"
+            ],
+            lazyLoad: true,
+            autoplay : 100,
+            autoplaySpeed: 400,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            slideSpeed: 100,
+            items: 4,
+            loop: true,
+            margin: 15,
+        });
+
+
+
         var member__js = $(".member__js");
         member__js.owlCarousel({
             nav : false,
