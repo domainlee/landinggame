@@ -445,11 +445,25 @@
 
             // Callbacks
             onScrollStart:  function (currentView, destinationView, direction) {
+                console.log(currentView);
+                console.log(destinationView);
+                console.log(direction);
+                if(direction == 'up') {
+                    $('.header').addClass('upscroll');
+                }
+                if(direction == 'down') {
+                    $('.header').removeClass('upscroll');
+                }
                 //  Do Something Usefull
             },
-            onScrollEnd:  function (currentView, previousView, direction) {
-                //  Do Something Usefull
+            onScrollEnd: function (currentView) {
+                // if (!currentView.hasClass('nav-transparent')) {
+                //     $('.header').addClass('changed');
+                // } else {
+                //     $('.header').removeClass('changed');
+                // }
             }
+
         });
 
     });
