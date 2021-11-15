@@ -7,12 +7,45 @@
     src: url('../fonts/GODOFWAR.TTF');
 }
 
-#navbar {
+.header {
+    width: 100%;
     position: fixed;
-    height: auto;
-    left: 0;
-    right: 0;
-    background-color: #DDD;
+    height: 100px;
+    line-height: 100px;
+    left: 0px;
+    top: 0px;
+    background: url(./../images/header_bg.png);
+}
+.header__menu ul {
+    vertical-align: middle;
+}
+.header__menu li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.header__menu li a {
+    font-family: Ranga;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header__menu li.active a {
+    color: #ffa300;
+}
+.header__menu li a .docs__icon {
+    width: 17px;
+    height: 17px;
+    margin-left: 5px;
+}
+.content {
+    margin-top: 100px;
 }
 
 /** General **/
@@ -22,22 +55,64 @@ body {
 .bg-main {
     background-image: url('../images/background.png');
 }
-.heading {
-    font-family: GodoWar;
-    text-align: center;
-    color: #FFF;
-}
 /****/
 .nfts-item {
     padding: 50px 0;
-
+    position: relative;
+}
+.nfts-item:before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/goldmine.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 8%;
 }
 .heading__default {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     color: #FFF;
 }
 .heading__label {
     font-family: GodoWar;
+    margin: 0 0 15px;
+    font-size: 54px;
+    text-transform: uppercase;
+}
+.heading__intro {
+    font-size: 20px;
+}
+.nfts-item__image figure {
+    margin: 10px auto;
+    width: 400px;
+    height: 400px;
+    background-color: #dddddd52;
+}
+.nfts-item__slider .owl-dots {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.nfts-item__slider .owl-dots > div {
+    margin: 0 10px;
+    width: 120px;
+    height: 8px;
+    display: inline-block;
+    background-color: #532C68;
+    border-radius: 10px;
+}
+.nfts-item__slider .owl-dots > div.active {
+    background-color: #D97CCB;
+}
+
+/****/
+.home-item {
+    padding: 50px 0;
 }
