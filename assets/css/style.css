@@ -53,6 +53,30 @@
   margin-top: 100px;
 }
 
+.menu__docs {
+  position: relative;
+}
+.menu__docs .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.menu__docs .dropdown-menu a {
+  color: #000 !important;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu__docs:hover .dropdown-menu {
+  display: block;
+}
+.menu__docs .dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
 /** General **/
 body {
   font-family: "Roboto", sans-serif;
@@ -122,11 +146,4 @@ body {
 /****/
 .home-item {
   padding: 50px 0;
-}
-
-/**Social button**/
-#social {
-  position: fixed;
-  right: 0px;
-  top: 0px;
 }
