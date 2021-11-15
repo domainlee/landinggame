@@ -451,5 +451,20 @@
             });
         });
 
+        $("#viewscroll").fullView({
+            navbar:  "#navbar",
+            dots:  false,
+            // ...
+            // Read Docs for more options details
+
+            // Callbacks
+            onScrollStart:  function (currentView, destinationView, direction) {
+                //  Do Something Usefull
+            },
+            onScrollEnd:  function (currentView, previousView, direction) {
+                //  Do Something Usefull
+            }
+        });
+
     });
 // })(jQuery, this);
