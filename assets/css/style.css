@@ -1,7 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranga:wght@700&family=Roboto&display=swap');
+/*font-family: 'Ranga', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+@font-face {
+    font-family: GodoWar;
+    src: url('../fonts/GODOFWAR.TTF');
+}
+
 #navbar {
     position: fixed;
     height: auto;
     left: 0;
     right: 0;
     background-color: #DDD;
+}
+
+/** General **/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.bg-main {
+    background-image: url('../images/background.png');
+}
+.heading {
+    font-family: GodoWar;
+    text-align: center;
+    color: #FFF;
+}
+/****/
+.nfts-item {
+    padding: 50px 0;
+
+}
+.heading__default {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    color: #FFF;
+}
+.heading__label {
+    font-family: GodoWar;
 }
