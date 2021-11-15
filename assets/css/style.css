@@ -113,6 +113,9 @@ body {
   right: 0;
   bottom: 8%;
 }
+.nfts-item__image {
+  max-width: 100%;
+}
 .heading__default {
   margin: 0 auto;
   max-width: 800px;
@@ -128,12 +131,15 @@ body {
 .heading__intro {
   font-size: 20px;
 }
+.nfts-item__slider {
+  margin: 15px 0 0;
+}
 .nfts-item__image figure {
   margin: 10px auto;
-  width: 400px;
-  height: 400px;
-  background-size: cover;
+  height: 345px;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .nfts-item__slider .owl-dots {
   margin: 30px 0 0;

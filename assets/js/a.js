@@ -111,7 +111,7 @@
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
             slideSpeed: 100,
-            items: 1,
+            items: 4,
             loop: true,
             margin: 10,
         });
