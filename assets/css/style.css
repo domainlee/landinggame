@@ -11,12 +11,21 @@
   width: 100%;
   height: 80px !important;
   line-height: 80px;
-  background: url(../images/header_bg.png);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
+}
+.header.downscroll {
+  opacity: 0;
+}
+.header.upscroll {
+  opacity: 1;
+  background: url(../images/header_bg.png);
+}
+.upscroll.header-transparent {
+  background-image: none;
 }
 .header__logo img {
   height: 60px;

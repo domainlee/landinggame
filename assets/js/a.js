@@ -450,18 +450,20 @@
                 console.log(direction);
                 if(direction == 'up') {
                     $('.header').addClass('upscroll');
+                    $('.header').removeClass('downscroll');
                 }
                 if(direction == 'down') {
                     $('.header').removeClass('upscroll');
+                    $('.header').addClass('downscroll');
                 }
                 //  Do Something Usefull
             },
             onScrollEnd: function (currentView) {
-                // if (!currentView.hasClass('nav-transparent')) {
-                //     $('.header').addClass('changed');
-                // } else {
-                //     $('.header').removeClass('changed');
-                // }
+                if (currentView.hasClass('nav-transparent')) {
+                    $('.header').addClass('header-transparent');
+                } else {
+                    $('.header').removeClass('header-transparent');
+                }
             }
 
         });
