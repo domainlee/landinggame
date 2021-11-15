@@ -41,7 +41,7 @@
     text-decoration: none;
     cursor: pointer;
 }
-.header__menu li.active a {
+.header__menu li a.active {
     color: #ffa300;
 }
 .header__menu li a .docs__icon {
