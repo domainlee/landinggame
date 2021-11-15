@@ -102,8 +102,8 @@
             dots: true,
             singleItem : true,
             navText: [
-                "<i class='fa fa-angle-left'></i>",
-                "<i class='fa fa-angle-right'></i>"
+                "<i class='fa fa-angle-left'></i> Previous",
+                "Next <i class='fa fa-angle-right'></i>"
             ],
             lazyLoad: true,
             autoplay : 100,
