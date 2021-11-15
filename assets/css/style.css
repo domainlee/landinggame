@@ -104,6 +104,9 @@ body {
   right: 0;
   bottom: 8%;
 }
+.nfts-item__image {
+  max-width: 100%;
+}
 .heading__default {
   margin: 0 auto;
   max-width: 800px;
@@ -121,8 +124,7 @@ body {
 }
 .nfts-item__image figure {
   margin: 10px auto;
-  width: 400px;
-  height: 400px;
+  height: 345px;
   background-size: cover;
   background-position: center;
 }
