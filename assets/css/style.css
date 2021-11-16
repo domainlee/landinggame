@@ -149,14 +149,19 @@ body {
   display: flex;
   justify-content: center;
 }
-.owl-nav {
+#team .owl-dots {
+  margin: 50px 0 0;
+}
+.owl-nav > div {
   color: #FFF;
   position: absolute;
-  left: 50px;
-  right: 50px;
   bottom: -5px;
-  display: flex;
-  justify-content: space-between;
+}
+.owl-nav > div.owl-prev {
+  left: 50px;
+}
+.owl-nav > div.owl-next {
+  right: 50px;
 }
 .owl-nav div {
   text-transform: uppercase;
@@ -502,4 +507,41 @@ transform: rotate(45deg); */
 }
 #footer .footer__join li a {
   color: #fff;
+}
+
+#home {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+#home:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 5;
+}
+.hero__inner {
+  position: absolute;
+  padding-bottom: 62.25%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.hero__inner {
+  /*position: relative;*/
+  /*padding-bottom: 56.25%;*/
+  /*height: 0;*/
+  /*overflow: hidden;*/
+}
+.hero__inner iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
