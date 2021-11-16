@@ -54,7 +54,7 @@
   text-decoration: none;
   cursor: pointer;
 }
-.header__menu li a.active {
+.header__menu li.active a {
   color: #ffa300;
 }
 .header__menu li a .docs__icon {
@@ -479,7 +479,6 @@ body {
 
 /**Road map**/
 .roadmap-item__inner {
-  padding: 50px 0;
 }
 .roadmap-item__inner .time__line {
   display: flex;
@@ -526,7 +525,7 @@ body {
   box-shadow: 0 0 0 1px #fff;
 }
 .roadmap-item__inner .heading__default {
-  margin: 0 0 150px;
+  margin: -200px 0 100px;
   text-align: left;
   max-width: 100%;
 }
@@ -782,4 +781,20 @@ ul.time__line__content .label {
 .fadeInRight,
 .bounceInDown {
   visibility: visible;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 222;
+}
+#footer .fp-tableCell {
+  height: 200px !important;
 }

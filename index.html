@@ -38,14 +38,15 @@
             </a>
           </div>
           <div class="col-md-9">
-            <ul class="header__menu">
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#gameplay">GamePlay</a></li>
-              <li><a href="#nfts">Nfts Item</a></li>
-              <li><a href="#gem">Gem</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#roadmap">RoadMap</a></li>
-              <li><a href="#partner">Partner</a></li>
+            <ul class="header__menu" id="menu">
+              <li data-menuanchor="home"><a href="#home" class="active">Home</a></li>
+              <li data-menuanchor="gameplay"><a href="#gameplay">GamePlay</a></li>
+              <li data-menuanchor="nfts"><a href="#nfts">Nfts Item</a></li>
+              <li data-menuanchor="gem"><a href="#gem">Gem</a></li>
+              <li data-menuanchor="team"><a href="#team">Team</a></li>
+              <li data-menuanchor="roadmap"><a href="#roadmap">RoadMap</a></li>
+              <li data-menuanchor="partner"><a href="#partner">Partner</a></li>
+              <li data-menuanchor="footer" style="opacity: 0;visibility: visible;position: absolute"><a href="#footer"></a></li>
               <li class="menu__docs">
                 <a
                   >Docs
@@ -63,10 +64,7 @@
       </div>
     </div>
     <div id="fullpage">
-      <section
-        class="hero bg-main nav-transparent align-items-center"
-        id="home"
-      >
+      <section class="scroll_section hero bg-main nav-transparent align-items-center">
         <div class="hero__inner">
           <iframe
             width="100%"
@@ -79,7 +77,7 @@
           ></iframe>
         </div>
       </section>
-      <section class="gameplay bg-main align-items-center" id="gameplay">
+      <section class="scroll_section gameplay bg-main align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -170,7 +168,7 @@
         </div>
       </section>
       <!-- start nfts item -->
-      <section class="nfts-item bg-main align-items-center" id="nfts">
+      <section class="scroll_section nfts-item bg-main align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -263,7 +261,7 @@
       <!-- end nfts-item -->
 
       <!-- start gem -->
-      <section id="gem" class="gem-item align-items-center bg-main">
+      <section class="scroll_section gem-item align-items-center bg-main">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -340,7 +338,7 @@
       </section>
       <!-- end gem -->
 
-      <section id="team" class="align-items-center bg-core-team">
+      <section class="scroll_section align-items-center bg-core-team">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -512,7 +510,7 @@
       </section>
 
       <!-- start roadmap -->
-      <section id="roadmap" class="roadmap bg-main">
+      <section class="scroll_section roadmap bg-main">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -586,7 +584,7 @@
       </section>
       <!-- end roadmap -->
 
-      <section id="partner" class="align-items-center bg-main">
+      <section class="scroll_section align-items-center bg-main">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -627,9 +625,9 @@
         </div>
       </section>
       <!-- end nfts-item -->
-      <div
+      <section
         id="footer"
-        class="align-items-center"
+        class="scroll_section align-items-center"
         style="height: 200px !important"
       >
         <div class="container">
@@ -674,7 +672,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- start footer -->

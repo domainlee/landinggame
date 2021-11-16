@@ -1,60 +1,53 @@
 $(function () {
   // variables
-  var $header_top = $(".header-top");
-  var $nav = $("nav");
+  var $header_top = $(".header");
+  // var $nav = $("nav");
 
   // toggle menu
-  $header_top.find("a").on("click", function () {
-    $(this).parent().toggleClass("open-menu");
-  });
+  // $header_top.find("a").on("click", function () {
+  //   $(this).parent().toggleClass("open-menu");
+  // });
 
   // fullpage customization
   $("#fullpage").fullpage({
     // sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
-    sectionSelector: "section",
+    sectionSelector: ".scroll_section",
     // slideSelector: ".horizontal-scrolling",
-    navigation: true,
-    slidesNavigation: true,
+    // navigation: true,
+    // slidesNavigation: true,
     controlArrows: false,
-    anchors: ["home", "gameplay", "nfts", "gem", "team", "roadmap", "partner"],
+    anchors: ["home", "gameplay", "nfts", "gem", "team", "roadmap", "partner","footer"],
     menu: "#menu",
 
     afterLoad: function (anchorLink, index) {
-      $header_top.css("background", "rgba(0, 47, 77, .3)");
-      $nav.css("background", "rgba(0, 47, 77, .25)");
-      if (index == 5) {
-        $("#fp-nav").hide();
-      }
     },
 
     onLeave: function (index, nextIndex, direction) {
+      console.log(index);
+      console.log(nextIndex);
+      console.log(direction);
       if (index == 5) {
         $("#fp-nav").show();
       }
+      if(direction == 'up') {
+        $header_top.addClass('upscroll');
+        $header_top.removeClass('downscroll');
+      }
+      if(direction == 'down') {
+        $header_top.removeClass('upscroll');
+        $header_top.addClass('downscroll');
+        $header_top.removeClass('header-transparent');
+      }
+      if(nextIndex == 1) {
+        $header_top.addClass('header-transparent');
+      }
+
     },
 
     afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-      if (anchorLink == "fifthSection" && slideIndex == 1) {
-        $.fn.fullpage.setAllowScrolling(false, "up");
-        $header_top.css("background", "transparent");
-        $nav.css("background", "transparent");
-        $(this).css("background", "#374140");
-        $(this).find("h2").css("color", "white");
-        $(this).find("h3").css("color", "white");
-        $(this).find("p").css({
-          color: "#DC3522",
-          opacity: 1,
-          transform: "translateY(0)",
-        });
-      }
     },
 
     onSlideLeave: function (anchorLink, index, slideIndex, direction) {
-      if (anchorLink == "fifthSection" && slideIndex == 1) {
-        $.fn.fullpage.setAllowScrolling(true, "up");
-        $header_top.css("background", "rgba(0, 47, 77, .3)");
-        $nav.css("background", "rgba(0, 47, 77, .25)");
-      }
     },
   });
 });
