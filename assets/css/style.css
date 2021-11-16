@@ -373,28 +373,60 @@ body {
 }
 
 /**Road map**/
+.roadmap-item__inner {
+  padding: 50px 0;
+}
 .roadmap-item__inner .time__line {
-  margin-top: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.roadmap-item__inner .time__line .time__line__item {
+.roadmap-item__inner .time__line__box {
   width: 114px;
   height: 114px;
   border: 4px solid #ffffff;
   box-sizing: border-box;
   backdrop-filter: blur(100px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 16px;
   transform: rotate(45deg);
   background: linear-gradient(315deg, #fb6121 3.01%, #fc895a 99.78%);
-  /* border-radius: 16px;
-transform: rotate(45deg); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.roadmap-item__inner .time__line .time__line__item h3 {
+.time__line__box:after {
+  content: '';
+  width: 15px;
+  height: 115px;
+  background: linear-gradient(180deg, #ffffff 0%, rgb(253 253 253 / 0%) 80%);
+  transform: rotate(-45deg);
+  position: ABSOLUTE;
+  bottom: -95px;
+  right: -45px;
+  z-index: -10;
+}
+.time__line__box:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: ABSOLUTE;
+  border-radius: 50%;
+  background-color: #9E3285;
+  bottom: -99px;
+  right: -99px;
+  z-index: -10;
+  border: 3px solid;
+  box-shadow: 0 0 0 1px #fff;
+}
+.roadmap-item__inner .heading__default {
+  margin: 0 0 150px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.roadmap-item__inner .time__line__box h3 {
   font-family: Ranga;
   font-style: normal;
   font-weight: bold;
@@ -402,7 +434,70 @@ transform: rotate(45deg); */
   text-align: center;
   color: #ffffff;
   transform: rotate(-45deg);
+  margin: 0;
 }
+.time__line__item:nth-child(2) {
+  margin: -50px 0 0 0;
+}
+.time__line__item:nth-child(3) {
+  margin: -100px 0 0 0;
+}
+.time__line__item:nth-child(4) {
+  margin: -150px 0 0 0;
+}
+.time__line__item:nth-child(5) {
+  margin: -200px 0 0 0;
+}
+.time__line__item:nth-child(6) {
+  margin: -250px 0 0;
+}
+.time__line__item {
+  width: 16.6666666666%;
+  position: relative;
+}
+.time__line__item:nth-child(1) .time__line__box {
+  background: linear-gradient(315deg, #246AE4 3.01%, #70A4E0 99.78%);
+  border-radius: 16px;
+  transform: rotate(45deg);
+}
+.time__line__item:nth-child(2) .time__line__box {
+  background: linear-gradient(315deg, #5A4FCF 3.01%, #8A81DE 99.78%);
+}
+.time__line__item:nth-child(3) .time__line__box {
+  background: linear-gradient(315deg, #582D86 3.01%, #976ECC 99.78%);
+}
+.time__line__item:nth-child(4) .time__line__box {
+  background: linear-gradient(315deg, #FE1A71 3.01%, #FF6F9A 99.78%);
+}
+.time__line__item:nth-child(5) .time__line__box {
+  background: linear-gradient(315deg, #E0201B 3.01%, #FF5353 99.78%);
+}
+.time__line__item:nth-child(6) .time__line__box {
+  background: linear-gradient(315deg, #FB6121 3.01%, #FC895A 99.78%);
+}
+ul.time__line__content {
+  padding: 0 30px 0 0;
+  color: #FFF;
+  position: absolute;
+  bottom: -235px;
+}
+ul.time__line__content .label {
+  margin: 5px 0 5px -20px;
+  color: #FFCD00;
+  text-align: left;
+  display: block;
+  font-size: 13px;
+}
+.time__line__item:nth-child(2) .time__line__content {
+  bottom: -350px;
+}
+.time__line__item:nth-child(3) .time__line__content {
+  bottom: -300px;
+}
+.time__line__item:nth-child(4) .time__line__content {
+  bottom: -300px;
+}
+.time__line__item:nth-child(5) .time__line__content {}
 
 /**Partner**/
 .partner-item__inner .developer__logo {
@@ -423,7 +518,7 @@ transform: rotate(45deg); */
 #footer {
   background: url("../images/bg-footer.png") no-repeat, #2f1893;
   background-size: cover;
-  height: 200px;
+  height: 200px !important;
 }
 /* #footer::before {
   background-image: url("../images/bg-footer.png");
@@ -436,8 +531,8 @@ transform: rotate(45deg); */
   margin-top: 10px;
 }
 #footer .footer__menu li {
+  margin: 5px 30px 5px 0;
   display: inline-block;
-  margin-right: 30px;
 }
 
 #footer .footer__menu li a {
@@ -532,16 +627,17 @@ transform: rotate(45deg); */
   right: 0;
   left: 0;
 }
-.hero__inner {
-  /*position: relative;*/
-  /*padding-bottom: 56.25%;*/
-  /*height: 0;*/
-  /*overflow: hidden;*/
-}
 .hero__inner iframe {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+.header__menu {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: flex-end;
 }
