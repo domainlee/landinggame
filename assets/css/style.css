@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranga:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ranga:wght@700&family=Roboto:wght@400;700&display=swap");
 /*font-family: 'Ranga', cursive;*/
 /*font-family: 'Roboto', sans-serif;*/
 
@@ -98,6 +98,10 @@ body {
   background-image: url("../images/background.png");
   background-size: cover;
 }
+.bg-core-team {
+  background-image: url("../images/core_team_bg.png");
+  background-size: cover;
+}
 /****/
 .nfts-item {
   padding: 50px 0;
@@ -131,7 +135,7 @@ body {
   margin: 0 0 15px;
   font-size: 54px;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#FDD984, #A38252);
+  background: -webkit-linear-gradient(#fdd984, #a38252);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -157,7 +161,7 @@ body {
   margin: 50px 0 0;
 }
 .owl-nav > div {
-  color: #FFF;
+  color: #fff;
   position: absolute;
   bottom: -5px;
 }
@@ -205,7 +209,7 @@ body {
 .gameplay__item--inner {
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -238,7 +242,7 @@ body {
 
 .team__item {
   text-align: center;
-  color: #FFF;
+  color: #fff;
 }
 .team__slider {
   margin: 30px 0 0;
@@ -299,12 +303,12 @@ body {
 }
 #socials a.facebook {
   background: linear-gradient(
-          225deg,
-          #4676ed 7.48%,
-          #436de4 23.24%,
-          #3c55cd 48.89%,
-          #302ea8 81.05%,
-          #2b1e99 92.52%
+    225deg,
+    #4676ed 7.48%,
+    #436de4 23.24%,
+    #3c55cd 48.89%,
+    #302ea8 81.05%,
+    #2b1e99 92.52%
   );
 }
 #socials a.twitter {
@@ -315,15 +319,15 @@ body {
 }
 #socials a.instagram {
   background: linear-gradient(
-          225deg,
-          #fbe18a -1.14%,
-          #fcbb45 25.93%,
-          #f75274 47.65%,
-          #d53692 66.79%,
-          #8f39ce 94.81%,
-          #5b4fe9 128.68%
+    225deg,
+    #fbe18a -1.14%,
+    #fcbb45 25.93%,
+    #f75274 47.65%,
+    #d53692 66.79%,
+    #8f39ce 94.81%,
+    #5b4fe9 128.68%
   );
-}/**Gem**/
+} /**Gem**/
 .gem-item {
   position: relative;
 }
@@ -498,7 +502,7 @@ body {
 }
 
 .time__line__box:after {
-  content: '';
+  content: "";
   width: 15px;
   height: 115px;
   background: linear-gradient(180deg, #ffffff 0%, rgb(253 253 253 / 0%) 80%);
@@ -509,12 +513,12 @@ body {
   z-index: -10;
 }
 .time__line__box:before {
-  content: '';
+  content: "";
   width: 40px;
   height: 40px;
   position: ABSOLUTE;
   border-radius: 50%;
-  background-color: #9E3285;
+  background-color: #9e3285;
   bottom: -99px;
   right: -99px;
   z-index: -10;
@@ -557,34 +561,34 @@ body {
   position: relative;
 }
 .time__line__item:nth-child(1) .time__line__box {
-  background: linear-gradient(315deg, #246AE4 3.01%, #70A4E0 99.78%);
+  background: linear-gradient(315deg, #246ae4 3.01%, #70a4e0 99.78%);
   border-radius: 16px;
   transform: rotate(45deg);
 }
 .time__line__item:nth-child(2) .time__line__box {
-  background: linear-gradient(315deg, #5A4FCF 3.01%, #8A81DE 99.78%);
+  background: linear-gradient(315deg, #5a4fcf 3.01%, #8a81de 99.78%);
 }
 .time__line__item:nth-child(3) .time__line__box {
-  background: linear-gradient(315deg, #582D86 3.01%, #976ECC 99.78%);
+  background: linear-gradient(315deg, #582d86 3.01%, #976ecc 99.78%);
 }
 .time__line__item:nth-child(4) .time__line__box {
-  background: linear-gradient(315deg, #FE1A71 3.01%, #FF6F9A 99.78%);
+  background: linear-gradient(315deg, #fe1a71 3.01%, #ff6f9a 99.78%);
 }
 .time__line__item:nth-child(5) .time__line__box {
-  background: linear-gradient(315deg, #E0201B 3.01%, #FF5353 99.78%);
+  background: linear-gradient(315deg, #e0201b 3.01%, #ff5353 99.78%);
 }
 .time__line__item:nth-child(6) .time__line__box {
-  background: linear-gradient(315deg, #FB6121 3.01%, #FC895A 99.78%);
+  background: linear-gradient(315deg, #fb6121 3.01%, #fc895a 99.78%);
 }
 ul.time__line__content {
   padding: 0 30px 0 0;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   bottom: -235px;
 }
 ul.time__line__content .label {
   margin: 5px 0 5px -20px;
-  color: #FFCD00;
+  color: #ffcd00;
   text-align: left;
   display: block;
   font-size: 13px;
@@ -598,8 +602,8 @@ ul.time__line__content .label {
 .time__line__item:nth-child(4) .time__line__content {
   bottom: -300px;
 }
-.time__line__item:nth-child(5) .time__line__content {}
-
+.time__line__item:nth-child(5) .time__line__content {
+}
 
 /**Footer**/
 #footer {
@@ -662,12 +666,12 @@ ul.time__line__content .label {
 
 #footer .footer__join li.facebook {
   background: linear-gradient(
-          225deg,
-          #4676ed 7.48%,
-          #436de4 23.24%,
-          #3c55cd 48.89%,
-          #302ea8 81.05%,
-          #2b1e99 92.52%
+    225deg,
+    #4676ed 7.48%,
+    #436de4 23.24%,
+    #3c55cd 48.89%,
+    #302ea8 81.05%,
+    #2b1e99 92.52%
   );
 }
 #footer .footer__join li.twitter {
@@ -678,13 +682,13 @@ ul.time__line__content .label {
 }
 #footer .footer__join li.instagram {
   background: linear-gradient(
-          225deg,
-          #fbe18a -1.14%,
-          #fcbb45 25.93%,
-          #f75274 47.65%,
-          #d53692 66.79%,
-          #8f39ce 94.81%,
-          #5b4fe9 128.68%
+    225deg,
+    #fbe18a -1.14%,
+    #fcbb45 25.93%,
+    #f75274 47.65%,
+    #d53692 66.79%,
+    #8f39ce 94.81%,
+    #5b4fe9 128.68%
   );
 }
 #footer .footer__join li a {
@@ -697,7 +701,7 @@ ul.time__line__content .label {
   overflow: hidden;
 }
 #home:before {
-  content: '';
+  content: "";
   top: 0;
   bottom: 0;
   left: 0;
@@ -732,30 +736,50 @@ ul.time__line__content .label {
   height: 100vh;
 }
 
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
-  visibility: hidden; }
+.wp1,
+.wp2,
+.wp3,
+.wp4,
+.wp5,
+.wp6,
+.wp7,
+.wp8,
+.wp9 {
+  visibility: hidden;
+}
 
 .wp1 {
   -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s; }
+  animation-delay: 0.1s;
+}
 .wp2 {
   -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s; }
-.wp3{
+  animation-delay: 0.2s;
+}
+.wp3 {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-.wp4{
+.wp4 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.5s;
 }
-.wp5{
+.wp5 {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-.wp6{
+.wp6 {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
-  visibility: visible; }
+.bounceInLeft,
+.bounceInRight,
+.fadeInUp,
+.fadeInUpDelay,
+.fadeInDown,
+.fadeInUpD,
+.fadeInLeft,
+.fadeInRight,
+.bounceInDown {
+  visibility: visible;
+}

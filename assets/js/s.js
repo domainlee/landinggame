@@ -16,13 +16,7 @@ $(function () {
     navigation: true,
     slidesNavigation: true,
     controlArrows: false,
-    anchors: [
-      "firstSection",
-      "secondSection",
-      "thirdSection",
-      "fourthSection",
-      "fifthSection",
-    ],
+    anchors: ["home", "gameplay", "nfts", "gem", "team", "roadmap", "partner"],
     menu: "#menu",
 
     afterLoad: function (anchorLink, index) {
