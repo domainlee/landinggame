@@ -317,17 +317,11 @@ body {
 #socials a.youtube {
   background: linear-gradient(225deg, #ff0000 7.48%, #850000 92.52%);
 }
-#socials a.instagram {
-  background: linear-gradient(
-    225deg,
-    #fbe18a -1.14%,
-    #fcbb45 25.93%,
-    #f75274 47.65%,
-    #d53692 66.79%,
-    #8f39ce 94.81%,
-    #5b4fe9 128.68%
-  );
-} /**Gem**/
+#socials a.telegram {
+  background: #61a7de;
+}
+
+/**Gem**/
 .gem-item {
   position: relative;
 }
@@ -447,7 +441,7 @@ body {
   bottom: 8px;
   border: 1px solid #fff;
   border-radius: 15px;
-  padding: 10px;
+  padding: 25px 10px;
 }
 .gem-item__inner .gem__block__item span {
   color: #fff;
@@ -605,27 +599,27 @@ ul.time__line__content .label {
 }
 
 /**Footer**/
-#footer {
+.footer {
   background: url("../images/bg-footer.png") no-repeat, #2f1893;
   background-size: cover;
   height: 200px !important;
 }
-/* #footer::before {
+/* .footer::before {
   background-image: url("../images/bg-footer.png");
   background-size: cover;
 } */
-#footer .footer__logo img {
+.footer .footer__logo img {
   height: 70px;
 }
-#footer .footer__menu {
+.footer .footer__menu {
   margin-top: 10px;
 }
-#footer .footer__menu li {
+.footer .footer__menu li {
   margin: 5px 30px 5px 0;
   display: inline-block;
 }
 
-#footer .footer__menu li a {
+.footer .footer__menu li a {
   font-family: Ranga;
   font-style: normal;
   font-weight: bold;
@@ -639,7 +633,7 @@ ul.time__line__content .label {
   cursor: pointer;
 }
 
-#footer .footer__heading {
+.footer .footer__heading {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -648,10 +642,10 @@ ul.time__line__content .label {
   text-transform: uppercase;
   text-align: center;
 }
-#footer .footer__join {
+.footer .footer__join {
   text-align: center;
 }
-#footer .footer__join li {
+.footer .footer__join li {
   display: inline-block;
   margin-right: 8px;
   cursor: pointer;
@@ -663,7 +657,7 @@ ul.time__line__content .label {
   line-height: 35px;
 }
 
-#footer .footer__join li.facebook {
+.footer .footer__join li.facebook {
   background: linear-gradient(
     225deg,
     #4676ed 7.48%,
@@ -673,24 +667,16 @@ ul.time__line__content .label {
     #2b1e99 92.52%
   );
 }
-#footer .footer__join li.twitter {
+.footer .footer__join li.twitter {
   background: linear-gradient(225deg, #33ccff 7.48%, #337fff 92.52%);
 }
-#footer .footer__join li.youtube {
+.footer .footer__join li.youtube {
   background: linear-gradient(225deg, #ff0000 7.48%, #850000 92.52%);
 }
-#footer .footer__join li.instagram {
-  background: linear-gradient(
-    225deg,
-    #fbe18a -1.14%,
-    #fcbb45 25.93%,
-    #f75274 47.65%,
-    #d53692 66.79%,
-    #8f39ce 94.81%,
-    #5b4fe9 128.68%
-  );
+.footer .footer__join li.telegram {
+  background: #61a7de;
 }
-#footer .footer__join li a {
+.footer .footer__join li a {
   color: #fff;
 }
 
@@ -787,7 +773,7 @@ ul.time__line__content .label {
   overflow: hidden;
 }
 .hero:before {
-  content: '';
+  content: "";
   top: 0;
   bottom: 0;
   left: 0;
@@ -795,6 +781,6 @@ ul.time__line__content .label {
   position: absolute;
   z-index: 222;
 }
-#footer .fp-tableCell {
+.footer .fp-tableCell {
   height: 200px !important;
 }
