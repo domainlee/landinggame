@@ -1,3 +1,82 @@
+/**Gem**/
+.gem-item:before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background-image: url(../images/eve.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 22%;
+}
+
+.gem-item__inner .gem__block {
+  /* width: 70%; */
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gem-item__inner .gem__block .gem__block__item {
+  width: 199px;
+  height: 108px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #8e71a6;
+  text-align: center;
+  margin: 0 16px 0 16px;
+  outline-offset: -10px;
+  outline: 1px solid #fff;
+  -moz-outline-radius: 10px;
+}
+.gem-item__inner .gem__block .gem__block__item span {
+  color: #fff;
+  font-size: 15px;
+}
+.gem-item__inner .gem__block__img {
+  text-align: center;
+}
+.gem-item__inner .gem__block__img img {
+  height: 270px;
+  max-width: 100%;
+}
+
+/**Road map**/
+.roadmap-item__inner .time__line {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roadmap-item__inner .time__line .time__line__item {
+  width: 114px;
+  height: 114px;
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+  backdrop-filter: blur(100px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+  transform: rotate(45deg);
+  background: linear-gradient(315deg, #fb6121 3.01%, #fc895a 99.78%);
+  /* border-radius: 16px;
+transform: rotate(45deg); */
+}
+
+.roadmap-item__inner .time__line .time__line__item h3 {
+  font-family: Ranga;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  color: #ffffff;
+  transform: rotate(-45deg);
+}
+
 /**Partner**/
 .partner-item__inner .developer__logo {
   margin: 25px 0 25px;
@@ -5,37 +84,74 @@
 .partner-item__inner .developer__logo img {
   height: 145px;
 }
-
-/**Social button**/
-#socials {
-  position: fixed;
-  top: 30%;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px 0 0 10px;
-  padding: 8px;
-  z-index: 10;
-}
-#socials a {
-  cursor: pointer;
-  height: 45px;
-  width: 45px;
-  background-color: #ccc;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.partner-item__inner .payment__logo {
   text-align: center;
-  line-height: 45px;
+}
+.partner-item__inner .payment__logo img {
+  height: 45px;
+  max-width: 100%;
 }
 
-#socials a i {
-  font-size: 25px;
-  vertical-align: middle;
-  color: #fff;
+/**Footer**/
+#footer {
+  background: url("../images/bg-footer.png") no-repeat, #2f1893;
+  background-size: cover;
+  height: 200px;
 }
-#socials a.facebook {
+/* #footer::before {
+  background-image: url("../images/bg-footer.png");
+  background-size: cover;
+} */
+#footer .footer__logo img {
+  height: 70px;
+}
+#footer .footer__menu {
+  margin-top: 10px;
+}
+#footer .footer__menu li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#footer .footer__menu li a {
+  font-family: Ranga;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer .footer__heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+#footer .footer__join {
+  text-align: center;
+}
+#footer .footer__join li {
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  background-color: #ccc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+}
+
+#footer .footer__join li.facebook {
   background: linear-gradient(
     225deg,
     #4676ed 7.48%,
@@ -45,13 +161,13 @@
     #2b1e99 92.52%
   );
 }
-#socials a.twitter {
+#footer .footer__join li.twitter {
   background: linear-gradient(225deg, #33ccff 7.48%, #337fff 92.52%);
 }
-#socials a.youtube {
+#footer .footer__join li.youtube {
   background: linear-gradient(225deg, #ff0000 7.48%, #850000 92.52%);
 }
-#socials a.instagram {
+#footer .footer__join li.instagram {
   background: linear-gradient(
     225deg,
     #fbe18a -1.14%,
@@ -61,4 +177,7 @@
     #8f39ce 94.81%,
     #5b4fe9 128.68%
   );
+}
+#footer .footer__join li a {
+  color: #fff;
 }
