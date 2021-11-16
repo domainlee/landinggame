@@ -6,6 +6,10 @@
   font-family: GodoWar;
   src: url("../fonts/GODOFWAR.TTF");
 }
+@font-face {
+  font-family: Gugi;
+  src: url("../fonts/Gugi-Regular.ttf");
+}
 
 .header {
   width: 100%;
@@ -319,9 +323,7 @@ body {
           #8f39ce 94.81%,
           #5b4fe9 128.68%
   );
-}
-
-/**Gem**/
+}/**Gem**/
 .gem-item {
   position: relative;
 }
@@ -340,27 +342,110 @@ body {
   top: 0;
   bottom: 0;
 }
-
-.gem-item__inner .gem__block {
-  /* width: 70%; */
-  margin-top: 15px;
+.gem__block__container1,
+.gem__block__container2 {
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.gem-item__inner .gem__block .gem__block__item {
-  width: 199px;
+.gem__block__container1::after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  background: url(./../images/arrow.png);
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  width: 25px;
+  margin: 0 auto;
+}
+.gem__block__container2::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  background: url(./../images/arrow.png);
+  top: -15px;
+  left: 0;
+  right: 0;
+  width: 25px;
+  margin: 0 auto;
+}
+.gem-item__inner .gem__block1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gem-item__inner .gem__block2 {
+  margin-top: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gem-item__inner .gem__block1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #fff;
+  bottom: -25px;
+  left: 98px;
+  right: 98px;
+}
+.gem-item__inner .gem__block2::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #fff;
+  top: -25px;
+  left: 98px;
+  right: 98px;
+}
+.gem-item__inner .gem__block__item {
+  width: 167px;
   height: 108px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   background: #8e71a6;
   text-align: center;
   margin: 0 16px 0 16px;
-  outline-offset: -10px;
-  outline: 1px solid #fff;
-  -moz-outline-radius: 10px;
+  position: relative;
 }
-.gem-item__inner .gem__block .gem__block__item span {
+.gem-item__inner .gem__block1 .gem__block__item::after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  background: #fff;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+  width: 3px;
+  margin: 0 auto;
+}
+.gem-item__inner .gem__block2 .gem__block__item::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  background: #fff;
+  top: -22px;
+  left: 0;
+  right: 0;
+  width: 3px;
+  margin: 0 auto;
+}
+.gem-item__inner .gem__block__item .gem__item_inner {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+.gem-item__inner .gem__block__item span {
   color: #fff;
   font-size: 15px;
 }
@@ -369,6 +454,22 @@ body {
 }
 .gem-item__inner .gem__block__img img {
   height: 270px;
+  max-width: 100%;
+}
+
+/**Partner**/
+.partner-item__inner .developer__logo {
+  margin: 25px 0 45px;
+}
+.partner-item__inner .developer__logo img {
+  height: 145px;
+}
+.partner-item__inner .payment__logo {
+  margin-top: 20px;
+  text-align: center;
+}
+.partner-item__inner .payment__logo img {
+  height: 136px;
   max-width: 100%;
 }
 
@@ -499,20 +600,6 @@ ul.time__line__content .label {
 }
 .time__line__item:nth-child(5) .time__line__content {}
 
-/**Partner**/
-.partner-item__inner .developer__logo {
-  margin: 25px 0 25px;
-}
-.partner-item__inner .developer__logo img {
-  height: 145px;
-}
-.partner-item__inner .payment__logo {
-  text-align: center;
-}
-.partner-item__inner .payment__logo img {
-  height: 45px;
-  max-width: 100%;
-}
 
 /**Footer**/
 #footer {
@@ -641,3 +728,34 @@ ul.time__line__content .label {
   height: 80px;
   justify-content: flex-end;
 }
+#viewscroll > section {
+  height: 100vh;
+}
+
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
+  visibility: hidden; }
+
+.wp1 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+.wp2 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+.wp3{
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.wp4{
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.5s;
+}
+.wp5{
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.wp6{
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+  visibility: visible; }
