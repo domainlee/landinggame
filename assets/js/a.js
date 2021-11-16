@@ -376,148 +376,6 @@ $(function () {
     }
   });
 
-  $(
-    ".strategy__one-js li:nth-child(1), .strategy__one-js li:nth-child(2)"
-  ).waypoint(
-    function () {
-      $(
-        ".strategy__one-js li:nth-child(1), .strategy__one-js li:nth-child(2)"
-      ).addClass("animated fadeInLeft");
-    },
-    {
-      offset: "55%",
-    }
-  );
-  $(
-    ".strategy__one-js li:nth-child(3), .strategy__one-js li:nth-child(4)"
-  ).waypoint(
-    function () {
-      $(
-        ".strategy__one-js li:nth-child(3), .strategy__one-js li:nth-child(4)"
-      ).addClass("animated fadeInRight");
-    },
-    {
-      offset: "55%",
-    }
-  );
-  $(".strategy__one-js li:nth-child(5)").waypoint(
-    function () {
-      $(".strategy__one-js li:nth-child(5)").addClass("animated fadeInUp");
-    },
-    {
-      offset: "85%",
-    }
-  );
-  $(".strategy__image figure").waypoint(
-    function () {
-      $(".strategy__image figure").addClass("animated fadeInDown");
-    },
-    {
-      offset: "55%",
-    }
-  );
-
-  $(".procedure__heading").waypoint(
-    function () {
-      $(".procedure__heading").addClass("animated fadeInDown");
-    },
-    {
-      offset: "55%",
-    }
-  );
-
-  $(".procedure__list li").waypoint(
-    function () {
-      $(".procedure__list li").addClass("animated fadeInDown");
-    },
-    {
-      offset: "55%",
-    }
-  );
-  $(".profilo__headline, .profilo__intro").waypoint(
-    function () {
-      $(".profilo__headline, .profilo__intro").addClass("animated fadeInDown");
-    },
-    {
-      offset: "55%",
-    }
-  );
-  $(".profilo__list").waypoint(
-    function () {
-      $(".profilo__list").addClass("animated fadeInUp");
-    },
-    {
-      offset: "55%",
-    }
-  );
-
-  $(".member__heading, .member__intro").waypoint(
-    function () {
-      $(".member__heading, .member__intro").addClass("animated fadeInDown");
-    },
-    {
-      offset: "55%",
-    }
-  );
-  $(".member__inner").waypoint(
-    function () {
-      $(".member__inner").addClass("animated fadeInUp");
-    },
-    {
-      offset: "55%",
-    }
-  );
-
-  $(".form__headline, .form__intro").waypoint(
-    function () {
-      $(".form__headline, .form__intro").addClass("animated fadeInDown");
-    },
-    {
-      offset: "55%",
-    }
-  );
-  $(".form-contact").waypoint(
-    function () {
-      $(".form-contact").addClass("animated fadeInUp");
-    },
-    {
-      offset: "55%",
-    }
-  );
-
-  $(".news__item:nth-child(1)").waypoint(
-    function () {
-      $(".news__item:nth-child(1)").addClass("animated fadeInLeft");
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".news__item:nth-child(3)").waypoint(
-    function () {
-      $(".news__item:nth-child(3)").addClass("animated fadeInRight");
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".news__item:nth-child(2)").waypoint(
-    function () {
-      $(".news__item:nth-child(2)").addClass("animated fadeInUp");
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".team__image").waypoint(
-    function () {
-      $(".team__image").addClass("animated fadeInUp");
-    },
-    {
-      offset: "50%",
-    }
-  );
-
   var imageChange = $(".strategy__image figure");
   $(".strategy__list li").each(function () {
     var t = $(this).find("a");
@@ -530,89 +388,60 @@ $(function () {
     });
   });
 
-  $("#viewscroll").fullView({
-    navbar: "#navbar",
-    dots: false,
-    // ...
-    // Read Docs for more options details
-
-    // Callbacks
-    onScrollStart: function (currentView, destinationView, direction) {
-      console.log(currentView);
-      console.log(destinationView);
-      console.log(direction);
-      if (direction == "up") {
-        $(".header").addClass("upscroll");
-        $(".header").removeClass("downscroll");
-      }
-      if (direction == "down") {
-        $(".header").removeClass("upscroll");
-        $(".header").addClass("downscroll");
-      }
-      //  Do Something Usefull
-    },
-    onScrollEnd: function (currentView) {
-      if (currentView.hasClass("nav-transparent")) {
-        $(".header").addClass("header-transparent");
-      } else {
-        $(".header").removeClass("header-transparent");
-      }
-    },
-  });
 
   // fullpage customization
-  $("#fullpage").fullpage({
-    sectionSelector: "section",
-    slideSelector: ".horizontal-scrolling",
-    navigation: true,
-    slidesNavigation: true,
-    controlArrows: false,
-    anchors: [
-      "firstSection",
-      "secondSection",
-      "thirdSection",
-      "fourthSection",
-      "fifthSection",
-    ],
-    menu: "#menu",
-
-    afterLoad: function (anchorLink, index) {
-      $header_top.css("background", "rgba(0, 47, 77, .3)");
-      $nav.css("background", "rgba(0, 47, 77, .25)");
-      if (index == 5) {
-        $("#fp-nav").hide();
-      }
-    },
-
-    onLeave: function (index, nextIndex, direction) {
-      if (index == 5) {
-        $("#fp-nav").show();
-      }
-    },
-
-    afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-      if (anchorLink == "fifthSection" && slideIndex == 1) {
-        $.fn.fullpage.setAllowScrolling(false, "up");
-        $header_top.css("background", "transparent");
-        $nav.css("background", "transparent");
-        $(this).css("background", "#374140");
-        $(this).find("h2").css("color", "white");
-        $(this).find("h3").css("color", "white");
-        $(this).find("p").css({
-          color: "#DC3522",
-          opacity: 1,
-          transform: "translateY(0)",
-        });
-      }
-    },
-
-    onSlideLeave: function (anchorLink, index, slideIndex, direction) {
-      if (anchorLink == "fifthSection" && slideIndex == 1) {
-        $.fn.fullpage.setAllowScrolling(true, "up");
-        $header_top.css("background", "rgba(0, 47, 77, .3)");
-        $nav.css("background", "rgba(0, 47, 77, .25)");
-      }
-    },
-  });
+  // $("#fullpage").fullpage({
+  //   sectionSelector: "section",
+  //   // slideSelector: ".horizontal-scrolling",
+  //   // navigation: true,
+  //   // slidesNavigation: true,
+  //   // controlArrows: false,
+  //   // anchors: [
+  //   //   "firstSection",
+  //   //   "secondSection",
+  //   //   "thirdSection",
+  //   //   "fourthSection",
+  //   //   "fifthSection",
+  //   // ],
+  //   // menu: "#menu",
+  //   //
+  //   // afterLoad: function (anchorLink, index) {
+  //   //   $header_top.css("background", "rgba(0, 47, 77, .3)");
+  //   //   $nav.css("background", "rgba(0, 47, 77, .25)");
+  //   //   if (index == 5) {
+  //   //     $("#fp-nav").hide();
+  //   //   }
+  //   // },
+  //   //
+  //   // onLeave: function (index, nextIndex, direction) {
+  //   //   if (index == 5) {
+  //   //     $("#fp-nav").show();
+  //   //   }
+  //   // },
+  //   //
+  //   // afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+  //   //   if (anchorLink == "fifthSection" && slideIndex == 1) {
+  //   //     $.fn.fullpage.setAllowScrolling(false, "up");
+  //   //     $header_top.css("background", "transparent");
+  //   //     $nav.css("background", "transparent");
+  //   //     $(this).css("background", "#374140");
+  //   //     $(this).find("h2").css("color", "white");
+  //   //     $(this).find("h3").css("color", "white");
+  //   //     $(this).find("p").css({
+  //   //       color: "#DC3522",
+  //   //       opacity: 1,
+  //   //       transform: "translateY(0)",
+  //   //     });
+  //   //   }
+  //   // },
+  //   //
+  //   // onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+  //   //   if (anchorLink == "fifthSection" && slideIndex == 1) {
+  //   //     $.fn.fullpage.setAllowScrolling(true, "up");
+  //   //     $header_top.css("background", "rgba(0, 47, 77, .3)");
+  //   //     $nav.css("background", "rgba(0, 47, 77, .25)");
+  //   //   }
+  //   // },
+  // });
 });
 // })(jQuery, this);
