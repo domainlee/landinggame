@@ -13,7 +13,7 @@ $(function () {
     // sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
     sectionSelector: ".scroll_section",
     // slideSelector: ".horizontal-scrolling",
-    // navigation: true,
+    navigation: true,
     // slidesNavigation: true,
     controlArrows: false,
     anchors: ["home", "gameplay", "nfts", "gem", "team", "roadmap", "partner","footer"],

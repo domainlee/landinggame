@@ -816,3 +816,9 @@ ul.time__line__content .label {
   background-repeat: no-repeat;
   top: -50%;
 }
+#fp-nav.right {
+  left: 0;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #fff;
+}
