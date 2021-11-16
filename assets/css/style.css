@@ -317,6 +317,9 @@ body {
 }
 
 /**Gem**/
+.gem-item {
+  position: relative;
+}
 .gem-item:before {
   content: "";
   position: absolute;
@@ -329,7 +332,8 @@ body {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 22%;
+  top: 0;
+  bottom: 0;
 }
 
 .gem-item__inner .gem__block {
