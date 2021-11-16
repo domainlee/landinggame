@@ -342,7 +342,7 @@ body {
 }
 .gem__block__container1,
 .gem__block__container2 {
-  margin-top: 35px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +403,7 @@ body {
 }
 .gem-item__inner .gem__block__item {
   width: 167px;
-  height: 108px;
+  height: 90px;
   padding: 10px;
   border-radius: 15px;
   background: #8e71a6;
@@ -441,7 +441,9 @@ body {
   bottom: 8px;
   border: 1px solid #fff;
   border-radius: 15px;
-  padding: 25px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gem-item__inner .gem__block__item span {
   color: #fff;
@@ -451,8 +453,8 @@ body {
   text-align: center;
 }
 .gem-item__inner .gem__block__img img {
-  height: 270px;
-  max-width: 270px;
+  height: 250px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
