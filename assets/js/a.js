@@ -113,6 +113,26 @@ $(function () {
     margin: 10,
   });
 
+  var gem_item_js = $(".gem_item_js");
+  gem_item_js.owlCarousel({
+    nav: false,
+    dots: false,
+    singleItem: true,
+    navText: [
+      "<i class='fa fa-angle-left'></i> Previous",
+      "Next <i class='fa fa-angle-right'></i>",
+    ],
+    lazyLoad: true,
+    autoplay: 100,
+    autoplaySpeed: 400,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
+    slideSpeed: 100,
+    items: 1,
+    loop: true,
+    margin: 0,
+  });
+
   var gameplay__js = $(".gameplay__js");
   gameplay__js.owlCarousel({
     nav: true,

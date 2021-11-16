@@ -377,7 +377,7 @@ body {
   position: relative;
 }
 .gem-item__inner .gem__block2 {
-  margin-top: 45px;
+  margin: 45px 20px 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -389,8 +389,8 @@ body {
   height: 3px;
   background: #fff;
   bottom: -25px;
-  left: 98px;
-  right: 98px;
+  left: 92px;
+  right: 92px;
 }
 .gem-item__inner .gem__block2::before {
   content: "";
@@ -398,8 +398,8 @@ body {
   height: 3px;
   background: #fff;
   top: -25px;
-  left: 98px;
-  right: 98px;
+  left: 92px;
+  right: 92px;
 }
 .gem-item__inner .gem__block__item {
   width: 167px;
@@ -408,7 +408,7 @@ body {
   border-radius: 15px;
   background: #8e71a6;
   text-align: center;
-  margin: 0 16px 0 16px;
+  margin: 0 10px;
   position: relative;
 }
 .gem-item__inner .gem__block1 .gem__block__item::after {
@@ -452,7 +452,8 @@ body {
 }
 .gem-item__inner .gem__block__img img {
   height: 270px;
-  max-width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
 }
 
 /**Partner**/
