@@ -389,8 +389,8 @@ body {
   height: 3px;
   background: #fff;
   bottom: -25px;
-  left: 92px;
-  right: 92px;
+  left: 79px;
+  right: 79px;
 }
 .gem-item__inner .gem__block2::before {
   content: "";
@@ -398,11 +398,11 @@ body {
   height: 3px;
   background: #fff;
   top: -25px;
-  left: 92px;
-  right: 92px;
+  left: 79px;
+  right: 79px;
 }
 .gem-item__inner .gem__block__item {
-  width: 167px;
+  width: 140px;
   height: 90px;
   padding: 10px;
   border-radius: 15px;
