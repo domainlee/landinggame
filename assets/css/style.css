@@ -275,7 +275,7 @@ body {
 /**Social button**/
 #socials {
   position: fixed;
-  top: 30%;
+  top: 10%;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
@@ -283,7 +283,7 @@ body {
   flex-direction: column;
   border-radius: 10px 0 0 10px;
   padding: 8px;
-  z-index: 10;
+  z-index: 1000;
 }
 #socials a {
   cursor: pointer;
@@ -294,6 +294,12 @@ body {
   margin-bottom: 10px;
   text-align: center;
   line-height: 45px;
+}
+#socials a.icon_more {
+  display: none;
+}
+#socials a.icon_more.active {
+  display: block;
 }
 
 #socials a i {
@@ -319,6 +325,18 @@ body {
 }
 #socials a.telegram {
   background: #61a7de;
+}
+#socials a.discord {
+  background: #5865f2;
+}
+#socials a.medium {
+  background: #12100e;
+}
+#socials a.reddit {
+  background: #fc471e;
+}
+#socials a.website {
+  background: #3cc6f6;
 }
 
 /**Gem**/
@@ -657,9 +675,6 @@ ul.time__line__content .label {
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
-  text-align: center;
-}
-.footer .footer__join {
   text-align: center;
 }
 .footer .footer__join li {
