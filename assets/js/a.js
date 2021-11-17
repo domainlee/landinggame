@@ -116,7 +116,7 @@ $(function () {
   var gem_item_js = $(".gem_item_js");
   gem_item_js.owlCarousel({
     nav: false,
-    dots: false,
+    dots: true,
     singleItem: true,
     navText: [
       "<i class='fa fa-angle-left'></i> Previous",
