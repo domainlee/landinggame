@@ -62,6 +62,11 @@
   height: 12px;
   margin-left: 10px;
 }
+.header__menu li .go__app {
+  padding: 5px 16px;
+  background: #f1c46c;
+  border-radius: 8px;
+}
 .content {
   margin-top: 100px;
 }
@@ -842,4 +847,31 @@ ul.time__line__content .label {
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: #fff;
+}
+
+/**Trailer**/
+.trailer .left__intro {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+.trailer .right__banner {
+  text-align: center;
+  position: relative;
+}
+.trailer .right__banner img {
+  max-width: 100%;
+}
+.trailer .right__banner .left__conner {
+  background-image: url(./../images/left_conner.png);
+  background-size: cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
 }

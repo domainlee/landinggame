@@ -23,6 +23,7 @@ $(function () {
     controlArrows: false,
     anchors: [
       "home",
+      // "trailer",
       "gameplay",
       "nfts",
       "gem",
