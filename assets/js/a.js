@@ -99,8 +99,8 @@ $(function () {
     dots: true,
     singleItem: true,
     navText: [
-      "<i class='fa fa-angle-left'></i> Previous",
-      "Next <i class='fa fa-angle-right'></i>",
+      "<img src='assets/images/prev.png'> Previous",
+      "Next <img src='assets/images/next.png'>",
     ],
     lazyLoad: true,
     autoplay: 100,
@@ -108,7 +108,8 @@ $(function () {
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     slideSpeed: 100,
-    items: 4,
+    items: 5,
+    slideBy: 5,
     loop: true,
     margin: 10,
   });
@@ -139,8 +140,8 @@ $(function () {
     dots: true,
     singleItem: true,
     navText: [
-      "<i class='fa fa-angle-left'></i> Previous",
-      "Next <i class='fa fa-angle-right'></i>",
+      "<img src='assets/images/prev.png'> Previous",
+      "Next <img src='assets/images/next.png'>",
     ],
     lazyLoad: true,
     autoplay: 100,
@@ -155,13 +156,7 @@ $(function () {
 
   var team__js = $(".team__js");
   team__js.owlCarousel({
-    nav: true,
-    dots: true,
-    singleItem: true,
-    navText: [
-      "<i class='fa fa-angle-left'></i> Previous",
-      "Next <i class='fa fa-angle-right'></i>",
-    ],
+    dots: false,
     lazyLoad: true,
     autoplay: 100,
     autoplaySpeed: 400,
@@ -171,6 +166,20 @@ $(function () {
     items: 4,
     loop: true,
     margin: 15,
+  });
+
+  var advisor__js = $(".advisor__js");
+  advisor__js.owlCarousel({
+    dots: false,
+    lazyLoad: true,
+    autoplay: 0,
+    autoplaySpeed: 400,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
+    slideSpeed: 100,
+    items: 2,
+    loop: true,
+    margin: 10,
   });
 
   var member__js = $(".member__js");

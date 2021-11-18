@@ -51,11 +51,12 @@
               <li data-menuanchor="home">
                 <a href="#home" class="active">Home</a>
               </li>
+              <li data-menuanchor="trailer"><a href="#trailer">Video</a></li>
               <li data-menuanchor="gameplay">
                 <a href="#gameplay">GamePlay</a>
               </li>
               <li data-menuanchor="nfts"><a href="#nfts">Nfts Item</a></li>
-              <li data-menuanchor="gem"><a href="#gem">Gem</a></li>
+              <li data-menuanchor="gem"><a href="#gem">Coin</a></li>
               <li data-menuanchor="team"><a href="#team">Team</a></li>
               <li data-menuanchor="roadmap"><a href="#roadmap">RoadMap</a></li>
               <li data-menuanchor="partner"><a href="#partner">Partner</a></li>
@@ -72,7 +73,7 @@
                     class="docs__icon"
                     src="./assets/images/icon_arrow_down.png"
                 /></a>
-                <div class="dropdown-menu">
+                <div class="dropdown-second-menu">
                   <a
                     href="https://docs.risedefenders.io/wellcome/rise-of-defenders"
                     target="_blank"
@@ -81,7 +82,7 @@
                 </div>
               </li>
               <li>
-                <a class="go__app">Go to App</a>
+                <a >Go to App</a>
               </li>
             </ul>
           </div>
@@ -90,15 +91,16 @@
     </div>
     <div id="fullpage">
       <section
-        class="scroll_section hero bg-main nav-transparent align-items-center"
+        class="scroll_section hero bg-home nav-transparent align-items-center"
       >
-        <div class="hero__inner">
+        <!-- <div class="hero__inner">
           <video playsinline="" autoplay="1" muted="1" loop="1" id="myVideo">
             <source src="assets/video/bg.mp4" type="video/mp4" />
           </video>
-        </div>
+        </div> -->
+
       </section>
-      <!-- <section class="scroll_section trailer bg-main align-items-center">
+      <section class="scroll_section trailer bg-trailer align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -109,26 +111,22 @@
                   </div>
                 </div>
                 <div class="row" style="padding-top: 15px;">
-                    <div class="col-md-5">
-                      <div class="left__intro">
-                        Faraland has exquisitely digital collectibles created using blockchain technology. Each collectible is matchless, genuine and varies in rarity. The Faraland Universe has a lot of different races like human, orc, angel, demon, dragonborn, elf and fairy which are waiting for the user to discover and collect.
-Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the user engage in the combat arena and profit from battles.
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <div class="trainer__video">
+                        <div class="video-wrapper">
+                          <iframe src="http://www.youtube.com/embed/AddHereVideoId?autoplay=1&amp;html5=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6">
-                      <div class="right__banner">
-                        <img src="./assets/images/right_banner.png" />
-                        <div class="left__conner"></div>
-                      </div>
-                    </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
-      <section class="scroll_section gameplay bg-main align-items-center">
+      </section>
+      <section class="scroll_section gameplay bg-gameplay align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -158,10 +156,16 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                         ></figure>
                       </div>
                       <div class="gameplay__item--content">
-                        <h3>CAMPAIGN MODE</h3>
+                        <div class="mode_image">
+                          <figure
+                          class="owl-lazy"
+                          data-src="assets/images/campaign_mode.png">
+                          </figure>
+                        </div>
+                        <h3>CAMPAIGN MODE - PVE</h3>
                         <!-- <span>Solo - Duo</span> -->
                         <p>
-                          Players will go through battles on various maps and fight with different enemies to get many attractive rewards from loot boxes such as tokens for games that are RDG coins or equipment. Each game will require the player to spend a certain number of stamina to enter. The higher stage that players reach, the stronger the enemies they have to face, and of course, the rewards will be worth the efforts that players put in.
+                          Players will go through battles on various maps to get $RDG coins or equipment
                         </p>
                       </div>
                     </div>
@@ -175,10 +179,16 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                         ></figure>
                       </div>
                       <div class="gameplay__item--content">
-                        <h3>TOURNAMENT MODE</h3>
+                        <div class="mode_image">
+                          <figure
+                          class="owl-lazy"
+                          data-src="assets/images/tournament_mode.png">
+                          </figure>
+                        </div>
+                        <h3>TOURNAMENT MODE - PVE RANKING</h3>
                         <!-- <span>Solo - Duo</span> -->
                         <p>
-                          In the Tournament Mode, all players will fight in the same endless game. The more monsters they destroy, the higher the player's score and also the higher the ranking. At the end of the season, the system will sum up the points to send reward to players and changing the rank based on their score. In tournament, players can even earn RDR and Premium Loot Box if their rank is high enough.
+                          There are a total of eight categories throughout the tournament for players to conquer, each with an attractive cumulative reward.
                         </p>
                       </div>
                     </div>
@@ -192,10 +202,16 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                         ></figure>
                       </div>
                       <div class="gameplay__item--content">
-                        <h3>ARENA MODE</h3>
+                        <div class="mode_image">
+                          <figure
+                          class="owl-lazy"
+                          data-src="assets/images/arena_mode.png"
+                        ></figure>
+                        </div>
+                        <h3>ARENA MODE - PVE RANKING</h3>
                         <!-- <span>Solo - Duo</span> -->
                         <p>
-                          Arena is a special mode, where players use their existing heroes to fight other players for their glory and reward. In this mode, each player is allowed to bring in up to three heroes and the fights will take place between two players on a turn-based mechanic. Similar to Tournament mode, Arena mode also has a ranking system and rewards RDR for players in certain ranks.
+                          Arena is a special Mode, where players use their existing Hero system to fight other players for their glory and reward.
                         </p>
                       </div>
                     </div>
@@ -207,12 +223,12 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
         </div>
       </section>
       <!-- start nfts item -->
-      <section class="scroll_section nfts-item bg-main align-items-center">
+      <section class="scroll_section nfts-item bg-nfts align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="nfts-item__inner">
-                <div class="heading__default" style="margin-bottom: 40px">
+                <div class="heading__default">
                   <h2 class="heading__label">NFTs Item</h2>
                   <div class="heading__intro">
                     Earn your NFTs item by playing the game and sell it on the
@@ -231,7 +247,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item1.png"
+                        data-src="assets/images/characters/char1.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char2.png"
                       ></figure>
                     </div>
                   </div>
@@ -239,7 +261,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item2.png"
+                        data-src="assets/images/characters/char3.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char4.png"
                       ></figure>
                     </div>
                   </div>
@@ -247,7 +275,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item3.png"
+                        data-src="assets/images/characters/char5.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char6.png"
                       ></figure>
                     </div>
                   </div>
@@ -255,7 +289,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item4.png"
+                        data-src="assets/images/characters/char7.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char8.png"
                       ></figure>
                     </div>
                   </div>
@@ -263,7 +303,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item5.png"
+                        data-src="assets/images/characters/char9.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char10.png"
                       ></figure>
                     </div>
                   </div>
@@ -271,7 +317,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item6.png"
+                        data-src="assets/images/characters/char11.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char12.png"
                       ></figure>
                     </div>
                   </div>
@@ -279,7 +331,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item7.png"
+                        data-src="assets/images/characters/char13.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char14.png"
                       ></figure>
                     </div>
                   </div>
@@ -287,7 +345,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item8.png"
+                        data-src="assets/images/characters/char15.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char16.png"
                       ></figure>
                     </div>
                   </div>
@@ -295,7 +359,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item13.png"
+                        data-src="assets/images/characters/char17.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char18.png"
                       ></figure>
                     </div>
                   </div>
@@ -303,7 +373,13 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item14.png"
+                        data-src="assets/images/characters/char19.png"
+                      ></figure>
+                    </div>
+                     <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char20.png"
                       ></figure>
                     </div>
                   </div>
@@ -311,7 +387,7 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item15.png"
+                        data-src="assets/images/characters/char21.png"
                       ></figure>
                     </div>
                   </div>
@@ -319,23 +395,7 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item16.png"
-                      ></figure>
-                    </div>
-                  </div>
-                   <div class="nfts-item__item">
-                    <div class="nfts-item__image">
-                      <figure
-                        class="owl-lazy"
-                        data-src="assets/images/items/item17.png"
-                      ></figure>
-                    </div>
-                  </div>
-                   <div class="nfts-item__item">
-                    <div class="nfts-item__image">
-                      <figure
-                        class="owl-lazy"
-                        data-src="assets/images/items/item18.png"
+                        data-src="assets/images/characters/char22.png"
                       ></figure>
                     </div>
                   </div>
@@ -343,15 +403,23 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item19.png"
+                        data-src="assets/images/characters/char23.png"
                       ></figure>
                     </div>
                   </div>
-                   <div class="nfts-item__item">
+                  <div class="nfts-item__item">
                     <div class="nfts-item__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/items/item20.png"
+                        data-src="assets/images/characters/char24.png"
+                      ></figure>
+                    </div>
+                  </div>
+                  <div class="nfts-item__item">
+                    <div class="nfts-item__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/characters/char25.png"
                       ></figure>
                     </div>
                   </div>
@@ -550,18 +618,6 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <div class="team__image">
                       <figure
                         class="owl-lazy"
-                        data-src="assets/images/core_teams/ceo.png"
-                      ></figure>
-                    </div>
-                    <h3 class="team__name">Tai Nguyen</h3>
-                    <span class="team__name"
-                      >CEO of Apero<br />Ex-CPO & CMO at Topica</span
-                    >
-                  </div>
-                  <div class="team__item">
-                    <div class="team__image">
-                      <figure
-                        class="owl-lazy"
                         data-src="assets/images/core_teams/trung_leo.png"
                       ></figure>
                     </div>
@@ -638,16 +694,6 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <h3 class="team__name">Son Nguyen</h3>
                     <span class="team__name">Technical Lead</span>
                   </div>
-                  <!-- <div class="team__item">
-                    <div class="team__image">
-                      <figure
-                        class="owl-lazy"
-                        data-src="assets/images/core_teams/member12.png"
-                      ></figure>
-                    </div>
-                    <h3 class="team__name">Vuong Anh Dang</h3>
-                    <span class="team__name">Advisor Blockchain</span>
-                  </div> -->
                   <div class="team__item">
                     <div class="team__image">
                       <figure
@@ -665,7 +711,7 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                         data-src="assets/images/core_teams/cuong_nguyen.png"
                       ></figure>
                     </div>
-                    <h3 class="team__name">CƯỜNG NGUYỄN</h3>
+                    <h3 class="team__name">Cuong Nguyen</h3>
                     <span class="team__name">Blockchain Dev</span>
                   </div>
                   <div class="team__item">
@@ -689,6 +735,50 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <span class="team__name">Head of Community Building</span>
                   </div>
                 </div>
+                <div class="heading__default">
+                  <h2 class="heading__label">ADVISORS</h2>
+                  <div class="heading__intro"></div>
+                </div>
+                <div
+                  class="
+                    team__slider advisor__js
+                    owl-carousel__js
+                    owl-carousel owl-theme
+                  "
+                >
+                  <div class="team__item">
+                    <div class="team__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/core_teams/ceo.png"
+                      ></figure>
+                    </div>
+                    <h3 class="team__name">Tai Nguyen</h3>
+                    <span class="team__name"
+                      >CEO of Apero<br />Ex-CPO & CMO at Topica</span
+                    >
+                  </div>
+                  <div class="team__item">
+                    <div class="team__image">
+                      <figure
+                        class="owl-lazy"
+                        data-src="assets/images/core_teams/trung_leo.png"
+                      ></figure>
+                    </div>
+                    <h3 class="team__name">Trung Leo</h3>
+                    <span class="team__name">CMO</span>
+                  </div>
+                </div>
+                <!-- <div class="advisor">
+                  <div class="advisor__item">
+                    <div class="advisor__image">
+                      <image src="assets/images/core_teams/trung_leo.png" />
+                    </div>
+                    <h3 class="team__name">Trung Leo</h3>
+                    <span class="team__name">CMO</span>
+                  </div>
+                </div> -->
+
               </div>
             </div>
           </div>
@@ -782,23 +872,11 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
       </section>
       <!-- end roadmap -->
 
-      <section class="scroll_section partner align-items-center bg-main">
+      <section class="scroll_section partner align-items-center bg-partner">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="partner-item__inner">
-                <div class="heading__default" style="margin-bottom: 20px;">
-                  <h2 class="heading__label">Developer</h2>
-                  <div class="heading__intro">
-                    The team always plays an important role in the success of a
-                    project as a team, we have been working with each other for
-                    more than 5 years, with everyone being highly experienced in
-                    their own expertise
-                  </div>
-                  <div class="developer__logo is-animated">
-                    <img src="./assets/images/apero.png" />
-                  </div>
-                </div>
                 <div class="heading__default">
                   <h2 class="heading__label">
                     Investors
@@ -814,7 +892,7 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                   </h2>
                   <div class="heading__intro"></div>
                   <div class="payment__logo is-animated">
-                    <!-- <img src="./assets/images/partner/payment.png" /> -->
+                    <img src="./assets/images/partner/payment.png" />
                   </div>
                 </div>
               </div>
@@ -832,44 +910,49 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
                     <img src="./assets/images/logo.png" />
                   </a>
                 </div>
-                <div class="col-md-6">
-                  <ul class="footer__menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#gameplay">GamePlay</a></li>
-                    <li><a href="#nfts">Nfts Item</a></li>
-                    <li><a href="#gem">Gem</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#roadmap">RoadMap</a></li>
-                    <li><a href="#partner">Partner</a></li>
-                    <li class="menu__docs">
-                      <a> Docs </a>
-                    </li>
-                  </ul>
+                <div class="col-md-5">
+                  <h4 class="footer__heading">About</h4>
+                  <div class="row">
+                      <div class="col-md-6">
+                        <ul class="footer__menu">
+                          <li><a href="#home">Home</a></li>
+                          <li><a href="#trailer">Video</a></li>
+                          <li><a href="#gameplay">GamePlay</a></li>
+                          <li><a href="#nfts">NFTs Item</a></li>
+                          
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="footer__menu">
+                          <li><a href="#gem">Coin</a></li>
+                          <li><a href="#roadmap">Roadmap</a></li>
+                          <li><a href="#nfts">Partner</a></li>
+                          <li><a href="#">Go To App</a></li>
+                        </ul>
+                      </div>
+                  </div>
                 </div>
-                <div class="col-md-3">
-                  <h4 class="footer__heading">Join Our Community</h4>
-                  <ul class="footer__join">
-                    <li class="facebook">
-                      <a title="Facebook" href="https://www.facebook.com/Rise-of-Defenders-100956649087349" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li class="twitter">
-                      <a title="Twitter" href="https://twitter.com/DefendersRise" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li class="youtube">
-                      <a title="YouTube" href="https://www.youtube.com/channel/UCCl7V5NtAgh7DAOHEUCku2A" target="_blank"
-                        ><i class="fab fa-youtube"></i
-                      ></a>
-                    </li>
-                    <li class="telegram">
-                      <a title="Telegram Ann" href="https://t.me/RiseDefendersAnn" target="_blank"
-                        ><i class="fa fa-paper-plane"></i
-                      ></a>
-                    </li>
-                  </ul>
+                <div class="col-md-4">
+                  <h4 class="footer__heading">Social</h4>
+                  <div class="row">
+                      <div class="col-md-6">
+                        <ul class="footer__menu">
+                          <li><a href="https://twitter.com/DefendersRise">Twitter</a></li>
+                          <li><a href="#">Website</a></li>
+                          <li><a href="https://t.me/RiseDefendersAnn">Telegram Ann</a></li>
+                          <li><a href="https://t.me/RiseDefendersChat">Telegram Com</a></li>
+                          
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="footer__menu">
+                          <li><a href="https://www.reddit.com/user/RiseDefenders">Reddit</a></li>
+                          <li><a href="https://discord.com/invite/x7cAKWnWh4">Discord</a></li>
+                          <li><a href="https://www.facebook.com/Rise-of-Defenders-100956649087349">Fanpage</a></li>
+                          <li><a href="https://www.youtube.com/channel/UCCl7V5NtAgh7DAOHEUCku2A">YouTube</a></li>
+                        </ul>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -884,11 +967,12 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
 
     <!-- start social -->
     <div id="socials">
+       <a class="medium" title="Medium" href="https://medium.com/@risedefenders" target="_blank"
+          ><i class="fab fa-medium-m"></i></a>
+        <a class="twitter" title="Twitter" href="https://twitter.com/DefendersRise" target="_blank"
+        ><i class="fab fa-twitter"></i></a>
       <a class="facebook" title="Facebbook" href="https://www.facebook.com/Rise-of-Defenders-100956649087349" target="_blank"
         ><i class="fab fa-facebook-f"></i
-      ></a>
-      <a class="twitter" title="Twitter" href="https://twitter.com/DefendersRise" target="_blank"
-        ><i class="fab fa-twitter"></i
       ></a>
       <a class="telegram" title="Telegram Ann" href="https://t.me/RiseDefendersAnn" target="_blank"
         ><i class="fa fa-paper-plane"></i
@@ -906,8 +990,6 @@ Last but not least, Faraland is also a multiplayer RPG NFT GAME that lets the us
         </a>
           <a class="icon_more youtube" title="YouTube" href="https://www.youtube.com/channel/UCCl7V5NtAgh7DAOHEUCku2A" target="_blank"
           ><i class="fab fa-youtube"></i></a>
-          <a class="icon_more medium" title="Medium" href="https://medium.com/@risedefenders" target="_blank"
-          ><i class="fab fa-medium-m"></i></a>
       <a class="more_social_btn"><i class="fa fa-ellipsis-h"></i></a>
     </div>
     <!-- end social -->
