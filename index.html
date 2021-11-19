@@ -41,51 +41,55 @@
     <div id="navbar" class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <!-- <div class="col-md-2">
             <a class="header__logo">
               <img src="./assets/images/logo.png" />
             </a>
-          </div>
-          <div class="col-md-10">
-            <ul class="header__menu" id="menu">
-              <li data-menuanchor="home">
-                <a href="#home" class="active">Home</a>
-              </li>
-              <li data-menuanchor="trailer"><a href="#trailer">Video</a></li>
-              <li data-menuanchor="gameplay">
-                <a href="#gameplay">GamePlay</a>
-              </li>
-              <li data-menuanchor="nfts"><a href="#nfts">Nfts Item</a></li>
-              <li data-menuanchor="gem"><a href="#gem">Coin</a></li>
-              <li data-menuanchor="team"><a href="#team">Team</a></li>
-              <li data-menuanchor="roadmap"><a href="#roadmap">RoadMap</a></li>
-              <li data-menuanchor="tokenomics"><a href="#tokenomics">Tokenomics</a></li>
-              <li data-menuanchor="partner"><a href="#partner">Partner</a></li>
-              <li
-                data-menuanchor="footer"
-                style="opacity: 0; visibility: visible; position: absolute"
-              >
-                <a href="#footer"></a>
-              </li>
-              <li class="menu__docs">
-                <a
-                  >Docs
-                  <img
-                    class="docs__icon"
-                    src="./assets/images/icon_arrow_down.png"
-                /></a>
-                <div class="dropdown-second-menu">
+          </div> -->
+          <div class="col-md-12">
+            <div class="header__menu">
+              <ul id="menu">
+                <li data-menuanchor="home">
+                  <a href="#home" class="active">Home</a>
+                </li>
+                <li data-menuanchor="trailer"><a href="#trailer">Video</a></li>
+                <li data-menuanchor="gameplay">
+                  <a href="#gameplay">GamePlay</a>
+                </li>
+                <li data-menuanchor="nfts"><a href="#nfts">Nft Items</a></li>
+                <li data-menuanchor="gem"><a href="#gem">Token</a></li>
+                <li data-menuanchor="team"><a href="#team">Team</a></li>
+                <li data-menuanchor="roadmap"><a href="#roadmap">RoadMap</a></li>
+                <li data-menuanchor="tokenomics"><a href="#tokenomics">Tokenomics</a></li>
+                <li data-menuanchor="partner"><a href="#partner">Partner</a></li>
+                <li ><a href="#">Marketplace</a></li>
+                <li
+                  data-menuanchor="footer"
+                  style="opacity: 0; visibility: visible; position: absolute"
+                >
+                  <a href="#footer"></a>
+                </li>
+                <li class="menu__docs">
                   <a
-                    href="https://docs.risedefenders.io/wellcome/rise-of-defenders"
-                    target="_blank"
-                    >White paper</a
-                  >
-                </div>
-              </li>
-              <li>
-                <a >Go to App</a>
-              </li>
-            </ul>
+                    >Docs
+                    <img
+                      class="docs__icon"
+                      src="./assets/images/icon_arrow_down.png"
+                  /></a>
+                  <div class="dropdown-second-menu">
+                    <a
+                      href="https://docs.risedefenders.io/wellcome/rise-of-defenders"
+                      target="_blank"
+                      >White paper</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <a class="go__app">Go to App</a>
+                </li>
+              </ul>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -94,12 +98,13 @@
       <section
         class="scroll_section hero bg-home nav-transparent align-items-center"
       >
-        <!-- <div class="hero__inner">
-          <video playsinline="" autoplay="1" muted="1" loop="1" id="myVideo">
-            <source src="assets/video/bg.mp4" type="video/mp4" />
-          </video>
-        </div> -->
-
+        <div class="hero__inner">
+          <div class="app__mobile">
+            <a href="#" target="_blank" class="btn__app android"></a>
+            <a href="#" target="_blank" class="btn__app ios"></a>
+            <a href="#" target="_blank" class="btn__app pc"></a>
+          </div>
+        </div>
       </section>
       <section class="scroll_section trailer bg-trailer align-items-center">
         <div class="container">
@@ -230,7 +235,7 @@
             <div class="col-md-12">
               <div class="nfts-item__inner">
                 <div class="heading__default">
-                  <h2 class="heading__label">NFTs Item</h2>
+                  <h2 class="heading__label">NFT Items</h2>
                   <div class="heading__intro">
                     Earn your NFTs item by playing the game and sell it on the
                     marketplace to make money
@@ -559,7 +564,6 @@
                       11+ years business experiens<br/>
                       5 years experience in<br/>
                       Crypto market investment
-                      CEO Rise of Defenders
                     </span>
                   </div>
                   <div class="team__item">
@@ -740,45 +744,6 @@
                       <span class="advisor__desc" >CEO Planet Sandbox Game <br/> Advisor Game Product</span>
                     </div>
                 </div>
-
-                <!-- <div
-                  class="
-                    team__slider advisor__js
-                    owl-carousel__js
-                    owl-carousel owl-theme
-                  "
-                >
-                  <div class="team__item">
-                    <div class="team__image">
-                      <figure
-                        class="owl-lazy"
-                        data-src="assets/images/core_teams/vuong_anh_dang.png"
-                      ></figure>
-                    </div>
-                    <h3 class="team__name">Vuong Anh Dang</h3>
-                    <span class="team__desc" >Advisor Blockchain</span>
-                  </div>
-                  <div class="team__item">
-                    <div class="team__image">
-                      <figure
-                        class="owl-lazy"
-                        data-src="assets/images/core_teams/tai_nguyen.png"
-                      ></figure>
-                    </div>
-                    <h3 class="team__name">Tai Nguyen</h3>
-                    <span class="team__desc">Founder and CEO of Apero <br/> Advisor Business</span>
-                  </div>
-                  <div class="team__item">
-                    <div class="team__image">
-                      <figure
-                        class="owl-lazy"
-                        data-src="assets/images/core_teams/minh_hoang.png"
-                      ></figure>
-                    </div>
-                    <h3 class="team__name">Minh Hoang</h3>
-                    <span class="team__desc">CEO Planet Sandbox Game <br/> Advisor Game Product</span>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -801,7 +766,7 @@
                         <h3>Q2-Q3/2021</h3>
                         <ul>
                           <li>Develop Game</li>
-                          <li>Cooperation Advisor/Par</li>
+                          <li>Cooperation Advisor/Partner</li>
                         </ul>
                       </div>
                       <div class="roadmap__item is-animated">
@@ -865,7 +830,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="partner-item__inner">
+              <div class="tokenomics_inner">
                 <div class="heading__default">
                   <h2 class="heading__label">
                     Tokenomics
@@ -877,7 +842,7 @@
                     <div>
                       <div class="chart__item">
                         <div class="is-animated">
-                          <span>Airdrop (1,0%)</span>
+                          <span style="margin-bottom: 5px;">Airdrop (1,0%)</span>
                           <div class="dotted">
                             <img src="assets/images/tokenomics/red_item.png" alt="">
                           </div>
@@ -885,7 +850,7 @@
                       </div>
                       <div class="chart__item">
                         <div class="is-animated">
-                          <span>Seed Round (5,0%)</span>
+                          <span style="margin-bottom: 5px;">Seed Round (5,0%)</span>
                           <div class="dotted">
                             <img src="assets/images/tokenomics/blue1.png" alt="">
                           </div>
@@ -917,25 +882,32 @@
                       </div>
                       <div class="chart__item">
                         <div class="is-animated">
-                          <span>Marketing (10,0%)</span>
-                          <div class="dotted">
-                            <img src="assets/images/tokenomics/gray.png" alt="">
+                          <div style="position: relative;">
+                            <span class="asb" style="right: 0;">Marketing (10,0%)</span>
+                              <div class="dotted">
+                                <img src="assets/images/tokenomics/gray.png" alt="">
+                              </div>
                           </div>
+                          
                         </div>
                       </div>
                       <div class="chart__item">
                         <div class="is-animated">
-                          <span style="margin-left: 40px;">Liquidity (2,50%)</span>
-                          <div class="dotted">
-                            <img src="assets/images/tokenomics/red2.png" alt="">
+                          <div style="position: relative;">
+                              <span class="asb" style="right: 0;">Liquidity (2,50%)</span>
+                              <div class="dotted">
+                                <img src="assets/images/tokenomics/red2.png" alt="">
+                              </div>
                           </div>
                         </div>
                       </div>
                      <div class="chart__item">
                         <div class="is-animated">
-                          <span>Staking Rewards (109,0%)</span>
-                          <div class="dotted">
-                            <img src="assets/images/tokenomics/cray.png" alt="">
+                          <div style="position: relative;">
+                            <span class="asb" style="left: -36px;">Staking Rewards (109,0%)</span>
+                            <div class="dotted">
+                              <img src="assets/images/tokenomics/cray.png" alt="">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -949,15 +921,17 @@
                       </div>
                       <div class="chart__item">
                          <div class="is-animated">
-                           <span>Ecosystem (6,0%)</span>
+                          <div style="position: relative;">
+                            <span class="asb" style="left: -35px;">Ecosystem (6,0%)</span>
                             <div class="dotted">
                               <img src="assets/images/tokenomics/orange.png" alt="">
                             </div>
+                          </div>
                          </div>
                       </div>
                       <div class="chart__item">
                         <div class="is-animated">
-                          <span>Partner & Advisor (5,0%)</span>
+                          <span style="margin-bottom: 5px;">Partner & Advisor (5,0%)</span>
                           <div class="dotted">
                             <img src="assets/images/tokenomics/sea.png" alt="">
                           </div>
@@ -1006,10 +980,11 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <div class="col-md-3">
+                <div class="col-md-3" style="text-align: center;">
                   <a class="footer__logo">
                     <img src="./assets/images/logo.png" />
                   </a>
+                  <p class="footer_email">contact@risedefenders.io</p>
                 </div>
                 <div class="col-md-5">
                   <h4 class="footer__heading">About</h4>
@@ -1019,16 +994,16 @@
                           <li><a href="#home">Home</a></li>
                           <li><a href="#trailer">Video</a></li>
                           <li><a href="#gameplay">GamePlay</a></li>
-                          <li><a href="#nfts">NFTs Item</a></li>
+                          <li><a href="#nfts">NFT Items</a></li>
                           
                         </ul>
                       </div>
                       <div class="col-md-6">
                         <ul class="footer__menu">
-                          <li><a href="#gem">Coin</a></li>
+                          <li><a href="#gem">Token</a></li>
                           <li><a href="#roadmap">Roadmap</a></li>
                           <li><a href="#nfts">Partner</a></li>
-                          <li><a href="#">Go To App</a></li>
+                          <li><a href="#">Marketplace</a></li>
                         </ul>
                       </div>
                   </div>
@@ -1040,8 +1015,8 @@
                         <ul class="footer__menu">
                           <li><a href="https://twitter.com/DefendersRise">Twitter</a></li>
                           <li><a href="#">Website</a></li>
-                          <li><a href="https://t.me/RiseDefendersAnn">Telegram Ann</a></li>
-                          <li><a href="https://t.me/RiseDefendersChat">Telegram Com</a></li>
+                          <li><a href="https://t.me/RiseDefendersAnn">Telegram Channel</a></li>
+                          <li><a href="https://t.me/RiseDefendersChat">Telegram Group</a></li>
                           
                         </ul>
                       </div>
@@ -1078,8 +1053,6 @@
       <a class="telegram" title="Telegram Ann" href="https://t.me/RiseDefendersAnn" target="_blank"
         ><i class="fa fa-paper-plane"></i
       ></a>
-        <a class="icon_more website" title="Website" href="#" target="_blank"
-          ><i class="fa fa-globe"></i></a>
         <a class="icon_more telegram" title="Telegram Community" href="https://t.me/RiseDefendersChat" target="_blank"
           ><i class="fa fa-paper-plane"></i
         ></a>     

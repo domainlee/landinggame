@@ -59,7 +59,6 @@ body {
 .header {
   width: 100%;
   height: 80px !important;
-  line-height: 80px;
   position: fixed;
   left: 0;
   right: 0;
@@ -81,6 +80,7 @@ body {
 }
 .header__menu ul {
   vertical-align: middle;
+  padding-left: 0px;
 }
 .header__menu li {
   display: inline-block;
@@ -106,10 +106,11 @@ body {
   height: 12px;
   margin-left: 10px;
 }
-.header__menu li .go__app {
+.header__menu li a.go__app {
   padding: 5px 16px;
   background: #f1c46c;
   border-radius: 8px;
+  color: #fff;
 }
 .content {
   margin-top: 100px;
@@ -148,7 +149,7 @@ body {
   content: "";
   position: absolute;
   width: 950px;
-  height: 600px;
+  height: 700px;
   background-image: url("../images/hero.gif");
   background-position: center;
   background-size: contain;
@@ -156,14 +157,14 @@ body {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 5%;
+  bottom: 3%;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  width: 438px;
-  height: 260px;
+  width: 258px;
+  height: 154px;
   background-image: url("../images/hero_logo.png");
   background-position: center;
   background-size: contain;
@@ -171,7 +172,7 @@ body {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 10%;
+  top: 10%;
   z-index: 999;
 }
 
@@ -246,6 +247,15 @@ body {
 }
 .owl-nav > div.owl-next {
   right: 50px;
+}
+.team__js .owl-nav > div {
+  top: 40% !important;
+}
+.team__js .owl-nav > div.owl-prev {
+  left: -40px;
+}
+.team__js .owl-nav > div.owl-next {
+  right: -40px;
 }
 .owl-nav div {
   text-transform: uppercase;
@@ -367,7 +377,8 @@ body {
   position: relative;
 }
 .advisor__block .advisor__item {
-  padding: 0 30px 0 30px;
+  padding: 0 40px 0 40px;
+  text-align: center;
 }
 .advisor__block .advisor__item .advisor__image {
   width: 155px;
@@ -406,7 +417,7 @@ body {
 /**Social button**/
 #socials {
   position: fixed;
-  top: 10%;
+  top: 30%;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
@@ -625,7 +636,7 @@ body {
 
 /**Footer**/
 .partner-item__inner {
-  margin: 0 0 180px;
+  margin: 0 0 600px;
 }
 .footer__logo {
   display: block;
@@ -645,6 +656,9 @@ body {
 }
 .footer .footer__logo img {
   height: 70px;
+}
+.footer .footer_email {
+  color: #a38252;
 }
 .footer .footer__menu {
   margin: -10px 0 0;
@@ -729,31 +743,36 @@ body {
 }
 .hero__inner {
   position: absolute;
-  padding-bottom: 62.25%;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
+  bottom: 2%;
   right: 0;
   left: 0;
 }
-.hero__inner iframe,
-.hero__inner video {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+.app__mobile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.btn__app {
+  cursor: pointer;
+  border: none;
+  width: 174px;
+  height: 50px;
+}
+.android {
+  background: url(./../images/android.png) no-repeat;
+}
+.ios {
+  background: url(./../images/ios.png) no-repeat;
+}
+.pc {
+  background: url(./../images/pc.png) no-repeat;
 }
 .header__menu {
   margin: 0;
   display: flex;
   align-items: center;
   height: 80px;
-  justify-content: flex-end;
+  justify-content: center;
   padding-left: 0px;
 }
 #viewscroll > section {
@@ -810,15 +829,6 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-}
-.hero:before {
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  z-index: 222;
 }
 .footer .fp-tableCell {
   height: 200px !important;
@@ -906,17 +916,17 @@ body {
 }
 .tokenomics__chart .chart__item:nth-child(8) {
   display: block;
-  bottom: -42px;
-  left: 7.5%;
+  bottom: -27px;
+  left: 4.5%;
 }
 .tokenomics__chart .chart__item:nth-child(9) {
   display: block;
-  top: 290px;
-  left: -4.5%;
+  top: 352px;
+  left: -4%;
 }
 .tokenomics__chart .chart__item:nth-child(10) {
   display: block;
-  top: 148px;
+  top: 171px;
   left: 4.5%;
 }
 .tokenomics__chart .chart__item:nth-child(11) {
@@ -931,4 +941,9 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #00dbff;
+}
+.chart__item span.asb {
+  margin-left: 40px;
+  position: absolute;
+  bottom: 10px;
 }

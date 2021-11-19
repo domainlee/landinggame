@@ -68,7 +68,13 @@ $(function () {
 
   var team__js = $(".team__js");
   team__js.owlCarousel({
+    nav: true,
     dots: false,
+    singleItem: true,
+    navText: [
+      "<img src='assets/images/prev.png'>",
+      "<img src='assets/images/next.png'>",
+    ],
     lazyLoad: true,
     autoplay: 100,
     autoplaySpeed: 400,
@@ -111,7 +117,7 @@ $(function () {
     slideSpeed: 100,
     items: 1,
     loop: true,
-    margin: 5,
+    margin: 10,
     responsive: {
       // 480 : {
       //     items: 2,
