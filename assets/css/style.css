@@ -604,9 +604,14 @@ body {
   display: block;
   font-size: 13px;
 }
+.roadmap__timeline .roadmap__item:nth-child(1) {
+  display: block;
+  bottom: -89px;
+  left: -2.5%;
+}
 .roadmap__timeline .roadmap__item:nth-child(2) {
   display: block;
-  top: 145px;
+  top: 190px;
   left: 13%;
 }
 
@@ -618,7 +623,7 @@ body {
 
 .roadmap__timeline .roadmap__item:nth-child(4) {
   display: block;
-  top: 50px;
+  top: 90px;
   left: 60%;
 }
 
@@ -630,7 +635,7 @@ body {
 
 .roadmap__timeline .roadmap__item:nth-child(6) {
   display: block;
-  top: 0px;
+  top: 48px;
   right: -6%;
 }
 
@@ -652,7 +657,7 @@ body {
   align-items: center;
 }
 .footer .footer__logo {
-  margin-top: 70px;
+  margin-top: 45px;
 }
 .footer .footer__logo img {
   height: 70px;
