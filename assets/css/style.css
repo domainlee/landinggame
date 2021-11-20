@@ -933,10 +933,13 @@ body {
 
 /**Trailer**/
 .trailer .trainer__video {
-  border: 10px solid transparent;
-  padding: 40px;
-  border-image: url(./../images/trailer_border.png) 80 / 35px round;
-  height: 535px;
+  padding: 60px;
+  background-image: url('../images/trailer_border.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .trailer .trainer__video img {
@@ -945,8 +948,7 @@ body {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 48.25%; /* 16:9 */
-  padding-top: 25px;
+  padding-bottom: 56.5%;
 }
 .video-wrapper iframe {
   position: absolute;
@@ -1081,7 +1083,7 @@ body {
     font-size: 20px;
   }
   .trailer .trainer__video {
-    height: 420px;
+    width: 68%;
   }
   .gem-item__content .content__img {
     width: 350px;
