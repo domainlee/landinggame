@@ -22,6 +22,7 @@ body {
 .bg-home {
   background-image: url("../images/bg/home_bg.png");
   background-size: cover;
+  background-position: bottom;
 }
 .bg-trailer {
   background-image: url("../images/bg/trailer_bg.png");
@@ -30,6 +31,7 @@ body {
 .bg-gameplay {
   background-image: url("../images/bg/gameplay_bg.png");
   background-size: cover;
+  background-position: bottom;
 }
 .bg-nfts {
   background-image: url("../images/bg/nfts_bg.png");
@@ -63,14 +65,14 @@ body {
   right: 0;
   top: 0;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgb(109 109 109 / 20%);
 }
 .header.downscroll {
   opacity: 0;
 }
 .header.upscroll {
   opacity: 1;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgb(109 109 109 / 20%);
 }
 .upscroll.header-transparent {
   background-image: none;
@@ -79,7 +81,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 5px;
 }
 .header__menu ul {
   vertical-align: middle;
@@ -87,66 +88,113 @@ body {
   margin-bottom: 0px !important;
 }
 .header__menu li {
+  margin: 0 5px;
   display: inline-block;
-  margin-right: 18px;
   position: relative;
 }
-.header__menu li a {
-  font-family: Roboto;
+.header__menu li:hover:after {
+  opacity: 1;
+}
+.header__menu li:hover a {
+  -webkit-transform: translate(0px, -2px);
+  -moz-transform: translate(0px, -2px);
+  -o-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+}
+.header__menu li:after {
+
+}
+.header__menu>ul>li>a {
+  padding: 15px 0;
   font-style: normal;
   font-weight: 550;
-  font-size: 14px;
   display: flex;
   align-items: center;
   color: #f9d582;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  font-family: GodoWar;
+  background: -webkit-linear-gradient(#fdd984, #a38252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 .header__menu li.active a {
   color: #fff;
 }
 .header__menu li a .docs__icon {
-  width: 12px;
-  height: 12px;
-  margin-left: 10px;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
 }
 .header__menu li a.go__app {
   padding: 5px 16px;
-  background: #f1c46c;
-  border-radius: 8px;
+  background: linear-gradient(180deg, #FDD984 0%, #A38252 100%);
+  border-radius: 4px;
   color: #fff;
+  -webkit-text-fill-color: #FFF;
+}
+.header__menu li:last-child:after {
+  display: none;
 }
 .content {
   margin-top: 100px;
 }
 .sub-menu {
-  display: none;
   position: absolute;
-  right: -13px;
-  background-color: #f9f9f9;
+  right: -55px;
+  background-color: #13192c;
   min-width: 160px;
-  border-radius: 8px;
   text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+  -o-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .sub-menu li {
+  margin: 0;
   padding: 8px;
-  margin-right: 0px !important;
 }
 .sub-menu li a {
-  color: #12100e;
+  color: #e9c779;
+  font-family: GodoWar;
+}
+.sub-menu li a:hover {
+  text-decoration: none;
 }
 .menu__docs:hover .sub-menu {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 /**home**/
 .hero:before {
   content: "";
   position: absolute;
-  width: 950px;
-  height: 700px;
-  background-image: url("../images/hero.gif");
+  width: 75%;
+  background-image: url(../images/hero-2.gif);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -154,27 +202,30 @@ body {
   left: 0;
   right: 0;
   top: 10%;
+  padding-top: 100%;
+  bottom: 0;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  width: 258px;
-  height: 154px;
-  background-image: url("../images/hero_logo.png");
+  width: 12%;
+  background-image: url(../images/hero_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
   left: 0;
   right: 0;
-  top: 11%;
   z-index: 999;
+  padding-top: 50%;
+  bottom: 20%;
+  top: -40%;
 }
 
 /****/
 .nfts-item {
-  padding: 50px 0;
+  padding: 10px 0;
   position: relative;
 }
 .nfts-item:before {
@@ -217,7 +268,7 @@ body {
 }
 .nfts-item__image figure {
   margin: 10px auto;
-  height: 220px;
+  height: 520px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -341,6 +392,7 @@ body {
   color: #fff;
 }
 .team__slider {
+  padding: 0 100px;
   margin: 30px 0 0;
 }
 .team__image figure {
@@ -509,9 +561,10 @@ body {
 .gem-item__content .info__item {
   position: absolute;
   z-index: 1;
+  text-align: left;
 }
 .gem-item__content .content__info .info__item span {
-  color: #00dbff;
+  color: #fff;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -538,18 +591,21 @@ body {
   display: block;
   top: 394px;
   left: 49.5%;
+  text-align: center;
 }
 .gem-item__content .content__info .info__item:nth-child(4) {
   display: block;
   top: 90px;
   left: 56.5%;
   transform: translateX(70px);
+  text-align: right;
 }
 .gem-item__content .content__info .info__item:nth-child(5) {
   display: block;
   top: 305px;
   left: 53.5%;
   transform: translateX(89px);
+  text-align: right;
 }
 
 /**Partner**/
@@ -594,7 +650,7 @@ body {
   line-height: 20px;
 }
 .roadmap__item ul li.label {
-  margin-left: -27px;
+  margin-left: -35px;
   color: #ffcd00;
   text-align: left;
   display: block;
@@ -653,13 +709,14 @@ body {
   align-items: center;
 }
 .footer .footer__logo {
-  margin-top: 45px;
+  margin-top: 35px;
 }
 .footer .footer__logo img {
   height: 70px;
 }
 .footer .footer_email {
-  color: #a38252;
+  margin: 0;
+  color: #fdd984;
 }
 .footer .footer__menu {
   margin: -10px 0 0;
@@ -667,20 +724,36 @@ body {
   list-style: none;
 }
 .footer .footer__menu li {
-  margin: 5px 30px 5px 0;
+  margin: 2px 0;
 }
 
 .footer .footer__menu li a {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 29px;
   display: flex;
   align-items: center;
   color: #fdd984;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.footer .footer__menu li:hover a {
+  -webkit-transform: translate(3px, 0px);
+  -moz-transform: translate(3px, 0px);
+  -o-transform: translate(3px, 0px);
+  -ms-transform: translate(3px, 0px);
+  transform: translate(3px, 0px);
 }
 
 .footer .footer__heading {
@@ -688,7 +761,7 @@ body {
   font-family: GodoWar;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
   color: #fdd984;
   text-transform: uppercase;
   text-align: left;
@@ -752,21 +825,40 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 999;
 }
 .btn__app {
   cursor: pointer;
   border: none;
-  width: 174px;
-  height: 50px;
+  width: 152px;
+  height: 43px;
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.btn__app:hover {
+  -webkit-transform: translate(0px, -5px);
+  -moz-transform: translate(0px, -5px);
+  -o-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
 }
 .android {
-  background: url(./../images/android.png) no-repeat;
+  background-image: url(./../images/android.png);
 }
 .ios {
-  background: url(./../images/ios.png) no-repeat;
+  background-image: url(./../images/ios.png);
 }
 .pc {
-  background: url(./../images/pc.png) no-repeat;
+  background-image: url(./../images/pc.png);
 }
 #viewscroll > section {
   height: 100vh;
@@ -828,7 +920,8 @@ body {
 }
 
 #fp-nav.right {
-  left: 0;
+  left: 15px;
+  right: initial;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {

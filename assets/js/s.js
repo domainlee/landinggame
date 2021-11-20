@@ -29,8 +29,8 @@ $(function () {
       "gameplay",
       "nfts",
       "gem",
-      "team",
       "roadmap",
+      "team",
       "tokenomics",
       "partner",
       "footer",
@@ -60,9 +60,9 @@ $(function () {
       }
 
       if ((index == 2 && nextIndex == 3) || (index == 4 && nextIndex == 3)) {
-        $isAnimatedGamePlay.addClass("animated fadeInUpBig");
+        $isAnimatedGamePlay.addClass("animated fadeInUp");
       } else {
-        $isAnimatedGamePlay.removeClass("animated fadeInUpBig");
+        $isAnimatedGamePlay.removeClass("animated fadeInUp");
       }
 
       if ((index == 4 && nextIndex == 5) || (index == 6 && nextIndex == 5)) {
@@ -76,7 +76,7 @@ $(function () {
         $isAnimatedGem.removeClass("animated fadeInUp");
       }
 
-      if ((index == 6 && nextIndex == 7) || (index == 8 && nextIndex == 7)) {
+      if ((index == 5 && nextIndex == 6) || (index == 7 && nextIndex == 6)) {
         $isAnimatedRoadmap.addClass("animated fadeIn");
         $isAnimatedRoadmap.eq(0).css("animation-delay", ".3s");
         $isAnimatedRoadmap.eq(1).css("animation-delay", ".6s");

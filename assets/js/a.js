@@ -20,8 +20,8 @@ $(function () {
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     slideSpeed: 100,
-    items: 5,
-    slideBy: 5,
+    items: 1,
+    // slideBy: 5,
     loop: true,
     margin: 10,
   });
@@ -83,7 +83,7 @@ $(function () {
     slideSpeed: 100,
     items: 4,
     loop: true,
-    margin: 15,
+    margin: 5,
   });
 
   var advisor__js = $(".advisor__js");
