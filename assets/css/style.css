@@ -253,22 +253,22 @@ body {
 }
 .heading__label {
   font-family: GodoWar;
-  margin: 0 0 20px;
-  font-size: 44px;
+  margin: 0 0 15px;
+  font-size: 36px;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#fdd984, #a38252);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .heading__intro {
-  font-size: 20px;
+  font-size: 18px;
 }
 .nfts-item__slider {
   margin: 15px 0 0;
 }
 .nfts-item__image figure {
   margin: 10px auto;
-  height: 520px;
+  height: 480px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -348,8 +348,8 @@ body {
 }
 .gameplay__image figure {
   margin: -10px 10px -10px 0;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -392,7 +392,7 @@ body {
   color: #fff;
 }
 .team__slider {
-  padding: 0 100px;
+  padding: 0 50px;
   margin: 30px 0 0;
 }
 .team__image figure {
@@ -625,6 +625,9 @@ body {
 }
 
 /**Road map**/
+.roadmap-item__inner {
+  margin: -80px 0 0;
+}
 .roadmap_section img {
   height: 330px;
 }
@@ -663,7 +666,7 @@ body {
 }
 .roadmap__timeline .roadmap__item:nth-child(2) {
   display: block;
-  top: 165px;
+  top: 80px;
   left: 13%;
 }
 
@@ -675,7 +678,7 @@ body {
 
 .roadmap__timeline .roadmap__item:nth-child(4) {
   display: block;
-  top: 79px;
+  top: -15px;
   left: 48%;
 }
 
@@ -687,7 +690,7 @@ body {
 
 .roadmap__timeline .roadmap__item:nth-child(6) {
   display: block;
-  top: 25px;
+  top: -70px;
   right: 2%;
 }
 
@@ -1033,4 +1036,89 @@ body {
   margin-left: 40px;
   position: absolute;
   bottom: 10px;
+}
+
+@media screen and (max-height: 520px) {
+  .hero:before {
+    content: "";
+    position: absolute;
+    width: 40%;
+  }
+  .hero::after {
+    width: 6%;
+  }
+
+}
+
+@media screen and (max-height: 680px) {
+  .hero:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+  }
+  .hero::after {
+    width: 8%;
+  }
+  .heading__default {
+    max-width: 600px;
+  }
+  .heading__label {
+    margin: 0 0 15px;
+    font-size: 28px;
+  }
+  .heading__intro {
+    font-size: 16px;
+  }
+  .gameplay__image figure {
+    width: 350px;
+    height: 350px;
+  }
+  .mode_image figure {
+    width: 150px;
+    height: 150px;
+  }
+  .gameplay__item--content h3 {
+    font-size: 20px;
+  }
+  .trailer .trainer__video {
+    height: 420px;
+  }
+  .gem-item__content .content__img {
+    width: 350px;
+    height: 350px;
+  }
+  .gem-item__content .content__info .info__item:nth-child(1) {
+    top: 70px;
+    left: 63%;
+  }
+  .gem-item__content .content__info .info__item:nth-child(2) {
+    top: 180px;
+    left: 69%;
+  }
+  .gem-item__content .content__info .info__item:nth-child(4) {
+    top: 69px;
+    left: 54.2%;
+  }
+  .gem-item__content .content__info .info__item:nth-child(5) {
+    display: block;
+    top: 177px;
+    left: 53.8%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .bg-core-team .heading__intro {
+    display: none;
+  }
+  .advisor__block .advisor__item .advisor__image, .team__image figure {
+    border: 5px solid transparent;
+    box-shadow: 0 0 0 2px #fdd984;
+  }
+  .team__image figure, .advisor__block .advisor__item .advisor__image {
+    height: 120px;
+    width: 120px;
+  }
+  .nfts-item__image figure {
+    height: 380px;
+  }
 }
