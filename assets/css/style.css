@@ -1142,6 +1142,7 @@ body {
   .gem-item__content .content__img {
     width: 350px;
     height: 350px;
+    margin: 0 auto 50px;
   }
   .gem-item__content .content__info .info__item:nth-child(1) {
     top: 70px;
@@ -1270,6 +1271,10 @@ body {
   }
   .chart__item span {
     font-size: 16px;
+  }
+  .gem-item__content .content__info .info__item:nth-child(3) {
+    display: block;
+    top: 310px;
   }
 }
 
