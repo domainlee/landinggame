@@ -994,9 +994,13 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 40px;
   left: 0;
   right: 0;
+  z-index: 111;
+}
+#resume {
+  position: absolute;
   z-index: 111;
 }
 .video-wrapper iframe {
