@@ -131,7 +131,7 @@ $(function () {
   });
 
   $(".more_social_btn").click(function () {
-    $(".icon_more").addClass("active");
+    $(".icon_more").toggleClass("active");
   });
 });
 // })(jQuery, this);

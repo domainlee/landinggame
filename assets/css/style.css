@@ -465,25 +465,65 @@ body {
 /**Social button**/
 #socials {
   position: fixed;
-  top: 30%;
+  top: 0;
+  bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
   display: flex;
-  flex-direction: column;
-  border-radius: 10px 0 0 10px;
-  padding: 8px;
   z-index: 1000;
+  justify-content: center;
+}
+.socials__inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  padding: 5px 8px;
+  border-radius: 10px;
 }
 #socials a {
+  margin: 5px 0;
   cursor: pointer;
   height: 45px;
   width: 45px;
   background-color: #ccc;
   border-radius: 8px;
-  margin-bottom: 10px;
   text-align: center;
   line-height: 45px;
+  position: relative;
+}
+#socials a span {
+  position: absolute;
+  top: 2px;
+  left: -150px;
+  width: 130px;
+  background-color: #21201dba;
+  color: #FFF;
+  border-radius: 10px;
+  font-size: 12px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#socials a:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+#socials a span:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 5px solid #21201dba;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  right: -5px;
 }
 #socials a.icon_more {
   display: none;
@@ -938,7 +978,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -949,6 +989,15 @@ body {
 .video-wrapper {
   position: relative;
   padding-bottom: 56.5%;
+}
+.video-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 111;
 }
 .video-wrapper iframe {
   position: absolute;
@@ -1032,7 +1081,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #00dbff;
+  color: #fff;
 }
 .chart__item span.asb {
   margin-left: 40px;
@@ -1052,11 +1101,11 @@ body {
 
 }
 
-@media screen and (max-height: 680px) {
+@media screen and (max-height: 710px) {
   .hero:before {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 60%;
   }
   .hero::after {
     width: 8%;
@@ -1079,6 +1128,7 @@ body {
     width: 150px;
     height: 150px;
   }
+
   .gameplay__item--content h3 {
     font-size: 20px;
   }
@@ -1106,9 +1156,120 @@ body {
     top: 177px;
     left: 53.8%;
   }
+  .team__name {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+  .tokenomics__chart {
+    padding-top: 100px;
+  }
+  .chart__img img {
+    width: 300px;
+  }
+  .tokenomics__chart .chart__item {
+    text-align: left;
+  }
+  .tokenomics__chart .chart__item:nth-child(1) {
+    display: block;
+    top: 23px;
+    left: 36.5%;
+  }
+  .tokenomics__chart .chart__item:nth-child(1) span, .tokenomics__chart .chart__item:nth-child(2) span, .tokenomics__chart .chart__item:nth-child(11) span {
+    position: relative;
+    top: -10px;
+  }
+  .tokenomics__chart .chart__item:nth-child(2) {
+    display: block;
+    top: 55px;
+    left: 55.5%;
+  }
+  .tokenomics__chart .chart__item:nth-child(3) {
+    display: block;
+    top: 110px;
+    right: -6%;
+  }
+  .tokenomics__chart .chart__item:nth-child(3) span {
+    text-indent: 45px;
+    display: block;
+  }
+  .tokenomics__chart .chart__item:nth-child(4) {
+    display: block;
+    top: 173px;
+    right: -11.3%;
+  }
+  .tokenomics__chart .chart__item:nth-child(4) span {
+    text-indent: 45px;
+    display: block;
+  }
+  .tokenomics__chart .chart__item:nth-child(5) {
+    display: block;
+    bottom: 97px;
+    right: -10.8%;
+  }
+  .tokenomics__chart .chart__item:nth-child(5)  span {
+    text-indent: 40px;
+    display: block;
+  }
+  .chart__item span.asb {
+    margin-left: 0;
+  }
+  .tokenomics__chart .chart__item:nth-child(6) {
+    display: block;
+    bottom: 38px;
+    right: -9.5%;
+  }
+  .tokenomics__chart .chart__item:nth-child(6) span {
+    display: block;
+    left: 55px;
+  }
+  .tokenomics__chart .chart__item:nth-child(7) {
+    bottom: -23px;
+    right: 14%;
+  }
+  .tokenomics__chart .chart__item:nth-child(7) span.asb {
+    left: 48px;
+  }
+  .tokenomics__chart .chart__item:nth-child(11) {
+    top: 65px;
+    left: 17%;
+  }
+  .tokenomics__chart .chart__item:nth-child(10) {
+    display: block;
+    top: 136px;
+    left: 10.5%;
+  }
+  .tokenomics__chart .chart__item:nth-child(11) span {
+    display: block;
+    text-indent: -35px;
+    top: -6px;
+  }
+  .tokenomics__chart .chart__item:nth-child(9) {
+    display: block;
+    top: 220px;
+    left: 1.5%;
+  }
+  .tokenomics__chart .chart__item:nth-child(9) span {
+    display: block;
+    text-indent: -50px;
+  }
+  .tokenomics__chart .chart__item:nth-child(8) {
+    display: block;
+    bottom: -3px;
+    left: 10.5%;
+  }
+  .tokenomics__chart .chart__item:nth-child(8) span {
+    left: -55px !important;
+  }
+
+  .chart__item img {
+    width: 55%;
+  }
+  .chart__item span {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 768px) {
   .bg-core-team .heading__intro {
     display: none;
   }
@@ -1122,5 +1283,11 @@ body {
   }
   .nfts-item__image figure {
     height: 380px;
+  }
+  .trailer .trainer__video {
+    width: 85%;
+  }
+  .team__slider {
+    margin: 30px 0;
   }
 }
