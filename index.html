@@ -22,6 +22,7 @@
   <link href="assets/images/favicon-01.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
   <link rel="stylesheet" href="assets/css/bootstrap.css" media="all" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="all" />
   <link rel="stylesheet" href="assets/css/all.css" media="all" />
   <link rel="stylesheet" href="assets/css/owl.carousel.css" media="all" />
   <link rel="stylesheet" href="assets/css/animate2.min.css" media="all" />
@@ -100,7 +101,12 @@
                 <div class="col-md-10">
                   <div class="trainer__video">
                     <div class="video-wrapper">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/_JAw4qAJyes?modestbranding=1&autohide=1&showinfo=0&controls=1&autoplay=1&mute=0&loop=1&playlist=_JAw4qAJyes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <div id="player">
+                      </div>
+                      <div class="video-control">
+                        <a id="mute"></a>
+                        <a id="resume"><span></span><span></span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -975,36 +981,55 @@
 <script type="text/javascript" src="assets/js/s.js"></script>
 
 <script>
-  // var tag = document.createElement('script');
-  // tag.src = "http://www.youtube.com/player_api";
-  // var firstScriptTag = document.getElementsByTagName('script')[0];
-  // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  // var player;
-  // var play = false;
-  // function onYouTubePlayerAPIReady() {
-  //   player = new YT.Player('player', {
-  //     height: '315',
-  //     width: '560',
-  //     videoId: '_JAw4qAJyes',
-  //     playerVars: {
-  //       autoplay: 1,
-  //       controls: 1,
-  //       showinfo: 0,
-  //       mute: 1,
-  //     }
-  //   });
-  //   function playVideo() {
-  //     player.playVideo();
-  //     play = false;
-  //   }
-  //   function pauseVideo() {
-  //     player.pauseVideo();
-  //     play = true;
-  //   }
-  //   document.getElementById('resume').onclick = function() {
-  //     !play ? pauseVideo() : playVideo();
-  //     this.classList.toggle("pause");
-  //   };
-  // }
+  var tag = document.createElement('script');
+  tag.src = "http://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+  var play = false;
+  var _mute = false;
+
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('player', {
+      height: '315',
+      width: '560',
+      videoId: '_JAw4qAJyes',
+      playerVars: {
+        autoplay: 1,
+        controls: 1,
+        showinfo: 0,
+        mute: 1,
+        playlist: '_JAw4qAJyes',
+        loop: 1
+      }
+    });
+    function playVideo() {
+      player.playVideo();
+      play = false;
+    }
+    function pauseVideo() {
+      player.pauseVideo();
+      play = true;
+    }
+    function mute() {
+      player.mute();
+      _mute = false;
+    }
+    function unMute() {
+      player.unMute();
+      _mute = true;
+    }
+
+    document.getElementById('resume').onclick = function() {
+      !play ? pauseVideo() : playVideo();
+      this.classList.toggle("pause");
+    };
+    document.getElementById('mute').onclick = function() {
+      !_mute ? unMute() : mute();
+      this.classList.toggle("un-mute");
+    };
+
+
+  }
 </script>
 </html>

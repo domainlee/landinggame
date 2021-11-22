@@ -999,9 +999,74 @@ body {
   right: 0;
   z-index: 111;
 }
-#resume {
+
+.video-wrapper:hover .video-control {
+  opacity: 1;
+}
+.video-control {
   position: absolute;
   z-index: 111;
+  background-color: #1c1c1c99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#resume {
+
+}
+#resume:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid #FFF;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#resume.pause:before {
+  opacity: 1;
+}
+#resume.pause span {
+  opacity: 0;
+}
+#resume span {
+  margin: 0 3px;
+  width: 5px;
+  height: 20px;
+  display: inline-block;
+  background-color: #FFF;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+#mute {
+  margin: 0 10px 0 0;
+  color: #FFF;
+}
+#mute:hover {
+  text-decoration: none;
+}
+#mute:before {
+  font: normal normal normal 26px/1 FontAwesome;
+  content: "\f026";
+}
+#mute.un-mute:before {
+  font: normal normal normal 26px/1 FontAwesome;
+  content: "\f028";
 }
 .video-wrapper iframe {
   position: absolute;
