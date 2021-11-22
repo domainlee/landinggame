@@ -103,9 +103,8 @@ body {
   transform: translate(0px, -2px);
 }
 .header__menu li:after {
-
 }
-.header__menu>ul>li>a {
+.header__menu > ul > li > a {
   padding: 15px 0;
   font-style: normal;
   font-weight: 550;
@@ -139,10 +138,10 @@ body {
 }
 .header__menu li a.go__app {
   padding: 5px 16px;
-  background: linear-gradient(180deg, #FDD984 0%, #A38252 100%);
+  background: linear-gradient(180deg, #fdd984 0%, #a38252 100%);
   border-radius: 4px;
   color: #fff;
-  -webkit-text-fill-color: #FFF;
+  -webkit-text-fill-color: #fff;
 }
 .header__menu li:last-child:after {
   display: none;
@@ -204,6 +203,7 @@ body {
   top: 10%;
   padding-top: 100%;
   bottom: 0;
+  z-index: 99;
 }
 
 .hero::after {
@@ -497,7 +497,7 @@ body {
   left: -150px;
   width: 130px;
   background-color: #21201dba;
-  color: #FFF;
+  color: #fff;
   border-radius: 10px;
   font-size: 12px;
   height: 40px;
@@ -516,7 +516,7 @@ body {
   visibility: visible;
 }
 #socials a span:after {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-top: 7px solid transparent;
@@ -858,11 +858,32 @@ body {
   position: absolute;
   z-index: 5;
 }
-.hero__inner {
+.app__inner {
   position: absolute;
   bottom: 2%;
   right: 0;
   left: 0;
+}
+.hero__inner {
+  position: absolute;
+  padding-bottom: 62.25%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.hero__inner iframe,
+.hero__inner video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .app__mobile {
   display: flex;
@@ -974,7 +995,7 @@ body {
 /**Trailer**/
 .trailer .trainer__video {
   padding: 60px;
-  background-image: url('../images/trailer_border.png');
+  background-image: url("../images/trailer_border.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -991,7 +1012,7 @@ body {
   padding-bottom: 56.5%;
 }
 .video-wrapper:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 40px;
@@ -1021,14 +1042,13 @@ body {
   transition: all 0.2s ease;
 }
 #resume {
-
 }
 #resume:before {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
-  border-left: 15px solid #FFF;
+  border-left: 15px solid #fff;
   border-bottom: 10px solid transparent;
   position: absolute;
   opacity: 0;
@@ -1048,14 +1068,14 @@ body {
   width: 5px;
   height: 20px;
   display: inline-block;
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
 #mute {
   margin: 0 10px 0 0;
-  color: #FFF;
+  color: #fff;
 }
 #mute:hover {
   text-decoration: none;
@@ -1167,7 +1187,6 @@ body {
   .hero::after {
     width: 6%;
   }
-
 }
 
 @media screen and (max-height: 710px) {
@@ -1244,7 +1263,9 @@ body {
     top: 23px;
     left: 36.5%;
   }
-  .tokenomics__chart .chart__item:nth-child(1) span, .tokenomics__chart .chart__item:nth-child(2) span, .tokenomics__chart .chart__item:nth-child(11) span {
+  .tokenomics__chart .chart__item:nth-child(1) span,
+  .tokenomics__chart .chart__item:nth-child(2) span,
+  .tokenomics__chart .chart__item:nth-child(11) span {
     position: relative;
     top: -10px;
   }
@@ -1276,7 +1297,7 @@ body {
     bottom: 97px;
     right: -10.8%;
   }
-  .tokenomics__chart .chart__item:nth-child(5)  span {
+  .tokenomics__chart .chart__item:nth-child(5) span {
     text-indent: 40px;
     display: block;
   }
@@ -1347,11 +1368,13 @@ body {
   .bg-core-team .heading__intro {
     display: none;
   }
-  .advisor__block .advisor__item .advisor__image, .team__image figure {
+  .advisor__block .advisor__item .advisor__image,
+  .team__image figure {
     border: 5px solid transparent;
     box-shadow: 0 0 0 2px #fdd984;
   }
-  .team__image figure, .advisor__block .advisor__item .advisor__image {
+  .team__image figure,
+  .advisor__block .advisor__item .advisor__image {
     height: 120px;
     width: 120px;
   }
