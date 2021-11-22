@@ -109,8 +109,8 @@
                       <div id="player">
                       </div>
                       <div class="video-control">
-                        <a id="mute"></a>
-                        <a id="resume"><span></span><span></span></a>
+                        <a id="mute" class="un-mute"></a>
+                        <a id="resume" class="pause"><span></span><span></span></a>
                       </div>
                     </div>
                   </div>
@@ -909,8 +909,8 @@
                   <div class="row">
                     <div class="col-md-5">
                       <ul class="footer__menu">
+                        <li><a href="https://medium.com/@risedefenders" target="_blank">Medium</a></li>
                         <li><a href="https://twitter.com/DefendersRise" target="_blank">Twitter</a></li>
-                        <li><a href="#" target="_blank">Website</a></li>
                         <li><a href="https://t.me/RiseDefendersAnn" target="_blank">Telegram Channel</a></li>
                         <li><a href="https://t.me/RiseDefendersChat" target="_blank">Telegram Group</a></li>
                       </ul>
@@ -1000,10 +1000,10 @@
       width: '560',
       videoId: '_JAw4qAJyes',
       playerVars: {
-        autoplay: 1,
+        autoplay: 0,
         controls: 0,
         showinfo: 0,
-        mute: 1,
+        mute: 0,
         playlist: '_JAw4qAJyes',
         loop: 1,
         modestbranding: 1,
@@ -1012,27 +1012,27 @@
     });
     function playVideo() {
       player.playVideo();
-      play = false;
+      play = true;
     }
     function pauseVideo() {
       player.pauseVideo();
-      play = true;
+      play = false;
     }
     function mute() {
       player.mute();
-      _mute = false;
+      _mute = true;
     }
     function unMute() {
       player.unMute();
-      _mute = true;
+      _mute = false;
     }
 
     document.getElementById('resume').onclick = function() {
-      !play ? pauseVideo() : playVideo();
+      !play ? playVideo() : pauseVideo();
       this.classList.toggle("pause");
     };
     document.getElementById('mute').onclick = function() {
-      !_mute ? unMute() : mute();
+      !_mute ? mute() : unMute();
       this.classList.toggle("un-mute");
     };
 
