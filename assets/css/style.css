@@ -1522,4 +1522,122 @@ body {
     padding-top: 124%;
     display: block;
   }
+  .gem-item .col-md-12 {
+    padding: 0 !important;
+  }
+  .gem-item__content .content__img {
+    overflow: hidden;
+    width: 60%;
+    height: initial;
+    margin: 0;
+  }
+  .content__info {
+    width: 40%;
+  }
+  .gem-item__content .content__info .info__item {
+    position: relative;
+    top: initial !important;
+    left: initial !important;
+    right: initial !important;
+    bottom: initial !important;
+    transform: translateX(0px) !important;
+    text-align: right !important;
+    text-indent: 0 !important;
+    border-image-source: url(../images/line.png);
+    border-image-slice: 2;
+    border-image-repeat: round;
+    border-bottom: 1px dashed;
+    padding: 6px 0;
+    margin: 15px 0;
+  }
+  .gem-item__content .content__info .info__item:nth-child(1) {
+    left: -40% !important;
+  }
+  .gem-item__content .content__info .info__item:nth-child(2) {
+    left: -31% !important;
+  }
+  .gem-item__content .content__info .info__item:nth-child(3) {
+    left: -30% !important;
+  }
+  .gem-item__content .content__info .info__item:nth-child(4) {
+    left: -37% !important;
+  }
+  .gem-item__content .content__info .info__item:nth-child(5) {
+    left: -65% !important;
+  }
+  .gem-item__content .content__info .info__item:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background-color: #FFF;
+    border-radius: 50%;
+    bottom: -4px;
+  }
+  .gem-item__content .content__info .info__item span {
+    text-indent: 0 !important;
+    margin: 0 !important;
+    font-size: 18px;
+  }
+  .gem-item__content .content__info .info__item .line {
+    display: none;
+  }
+  .gem-item__content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .content__img img {
+    position: relative;
+    max-width: 200%;
+    width: 200% !important;
+    left: -100%;
+  }
+  .gem-item:before {
+    background-size: 50% auto;
+    left: 0;
+    background-position: left;
+  }
+  .roadmap_section img {
+    display: none;
+  }
+  .roadmap__timeline .roadmap__item {
+    position: initial !important;
+    top: initial !important;
+    bottom: initial !important;
+    left: initial !important;
+    right: initial !important;
+    width: 46%;
+  }
+  .roadmap .heading__label {
+    margin: 0 !important;
+  }
+  .roadmap__timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(1) {
+    order: 6
+  }
+  .roadmap__timeline .roadmap__item:nth-child(6) {
+    order: 1
+  }
+  .roadmap__timeline .roadmap__item:nth-child(5) {
+    order: 2
+  }
+  .roadmap__timeline .roadmap__item:nth-child(4) {
+    order: 3
+  }
+  .roadmap__timeline .roadmap__item:nth-child(3) {
+    order: 4
+  }
+  .roadmap__timeline .roadmap__item:nth-child(2) {
+    order: 5
+  }
+  .roadmap__item ul li {
+    font-size: 13px;
+  }
 }

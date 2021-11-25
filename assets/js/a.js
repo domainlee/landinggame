@@ -58,7 +58,7 @@ $(function () {
       "<i class='fa fa-angle-left'></i> Previous",
       "Next <i class='fa fa-angle-right'></i>",
     ],
-    lazyLoad: true,
+    lazyLoad: false,
     autoplay: 300,
     autoplaySpeed: 400,
     animateIn: "fadeIn",
