@@ -26,6 +26,29 @@ $(function () {
     margin: 10,
   });
 
+  var nfts_item_mobile = $(".nfts-item__js--mobile");
+  nfts_item_mobile.owlCarousel({
+    nav: true,
+    dots: true,
+    singleItem: true,
+    navText: [
+      "<img src='assets/images/prev.png'> Previous",
+      "Next <img src='assets/images/next.png'>",
+    ],
+    lazyLoad: true,
+    autoplay: 300,
+    autoplaySpeed: 400,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
+    slideSpeed: 100,
+    items: 2,
+    slideBy: 2,
+    loop: true,
+    margin: 10,
+  });
+
+
+
   var gem_item_js = $(".gem_item_js");
   gem_item_js.owlCarousel({
     nav: false,

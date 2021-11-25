@@ -15,6 +15,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.button-menu {
+  display: none;
+}
 .bg-main {
   background-image: url("../images/background.png");
   background-size: cover;
@@ -242,6 +245,9 @@ body {
   right: 0;
   bottom: 8%;
 }
+.owl-carousel.owl-loaded.nfts-item__slider--mobile {
+  display: none;
+}
 .nfts-item__image {
   max-width: 100%;
 }
@@ -370,6 +376,8 @@ body {
   margin: 20px 0 0;
 }
 .gameplay__item--content {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .gameplay__item--content img {
@@ -1199,7 +1207,7 @@ body {
   }
 }
 
-@media screen and (max-height: 710px) {
+@media screen and (max-height: 710px), (max-width: 374px) {
   .hero:before {
     content: "";
     position: absolute;
@@ -1398,10 +1406,25 @@ body {
     margin: 30px 0;
   }
 }
-
+@media screen and (max-width: 320px) {
+  /*.gameplay__image figure {*/
+  /*  margin: 0 0 10px;*/
+  /*  width: 100px;*/
+  /*  height: 100px;*/
+  /*}*/
+}
 @media screen and (max-width: 768px) {
+  .header {
+    background: none;
+  }
+  .button-menu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icon-menu.png');
+  }
   #fp-nav {
-    display: none;
+    display: none !important;
   }
   .header__menu {
     display: none;
@@ -1434,5 +1457,69 @@ body {
   .trailer .trainer__video {
     padding: 28px;
     width: 95%;
+  }
+  .heading__intro {
+    font-size: 14px;
+  }
+  .gameplay__item--inner {
+    flex-direction: column;
+  }
+
+  .button-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon-menu.png);
+    margin: 0 0 0 auto;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-size: 20px auto;
+    background-position: center;
+    position: fixed;
+    right: 11px;
+    top: 8px;
+    z-index: 1001;
+  }
+  .mode_image {
+    order: 2;
+  }
+  .mode_image figure {
+    margin: 15px auto 0;
+    width: 150px;
+    height: 150px;
+  }
+  .gameplay__slider {
+    margin: 10px 0 0;
+  }
+  .gameplay__item--content h3 {
+    font-size: 16px;
+  }
+  .gameplay__image figure {
+    margin: 0 0 10px;
+    width: 160px;
+    height: 160px;
+  }
+  .owl-dots {
+    margin: 5px 0 0;
+  }
+  .owl-dots > div {
+    width: 8px;
+  }
+  .owl-nav {
+    display: none;
+  }
+  .owl-carousel.owl-loaded.nfts-item__slider--desktop {
+    display: none;
+  }
+  .owl-carousel.owl-loaded.nfts-item__slider--mobile {
+    display: block;
+  }
+  .nfts-item__js--mobile .nfts-item__image figure {
+    height: inherit;
+  }
+  .nfts-item__js--mobile .nfts-item__image figure:before {
+    content: '';
+    padding-top: 124%;
+    display: block;
   }
 }
