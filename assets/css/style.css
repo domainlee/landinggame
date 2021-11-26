@@ -1478,7 +1478,7 @@ body {
     position: fixed;
     right: 11px;
     top: 8px;
-    z-index: 1001;
+    z-index: 1002;
   }
   .mode_image {
     order: 2;
@@ -1832,5 +1832,30 @@ body {
   }
   .footer .footer__logo {
     margin: 0 0 10px 0 !important;
+  }
+  .header {
+    bottom: 0;
+    z-index: 1001;
+  }
+  .header__menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+  }
+  .header__menu li {
+    border-bottom: 1px solid;
+  }
+  .header__menu > ul > li > a {
+    padding: 15px 0;
+  }
+  .header, .header.upscroll, .header.downscroll {
+    opacity: 0;
+    background-color: #101010eb !important;
+  }
+  .menu__js .header, .menu__js .header.upscroll, .menu__js .header.downscroll {
+    opacity: 1;
+  }
+  .menu__js .header__menu {
+    display: block;
   }
 }

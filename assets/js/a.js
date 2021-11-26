@@ -138,5 +138,10 @@ $(function () {
   $(".more_social_btn").click(function () {
     $(".icon_more").toggleClass("active");
   });
+
+  $(".button-menu").click(function () {
+    $("body").toggleClass("menu__js");
+  });
+
 });
 // })(jQuery, this);
