@@ -1862,7 +1862,7 @@ body {
   }
   .header, .header.upscroll, .header.downscroll {
     opacity: 0;
-    background-color: #101010eb !important;
+    background-color: #101010fa !important;
   }
   .menu__js .header, .menu__js .header.upscroll, .menu__js .header.downscroll {
     opacity: 1;
