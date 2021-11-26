@@ -89,36 +89,7 @@ $(function () {
     margin: 0,
   });
 
-  var team__js = $(".team__js");
-  team__js.owlCarousel({
-    nav: true,
-    dots: false,
-    singleItem: true,
-    navText: [
-      "<img src='assets/images/prev.png'>",
-      "<img src='assets/images/next.png'>",
-    ],
-    lazyLoad: true,
-    autoplay: 300,
-    autoplaySpeed: 400,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    slideSpeed: 100,
-    items: 2,
-    loop: true,
-    margin: 5,
-    // responsive: {
-    //   0: {
-    //     items: 2
-    //   },
-    //   600: {
-    //     items: 4
-    //   },
-    //   1000: {
-    //     items: 4
-    //   }
-    // },
-  });
+
 
   var advisor__js = $(".advisor__js");
   advisor__js.owlCarousel({
