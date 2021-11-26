@@ -49,25 +49,7 @@ $(function () {
 
 
 
-  var gem_item_js = $(".gem_item_js");
-  gem_item_js.owlCarousel({
-    nav: false,
-    dots: true,
-    singleItem: true,
-    navText: [
-      "<i class='fa fa-angle-left'></i> Previous",
-      "Next <i class='fa fa-angle-right'></i>",
-    ],
-    lazyLoad: false,
-    autoplay: 300,
-    autoplaySpeed: 400,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    slideSpeed: 100,
-    items: 1,
-    loop: true,
-    margin: 0,
-  });
+
 
   var gameplay__js = $(".gameplay__js");
   gameplay__js.owlCarousel({

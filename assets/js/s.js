@@ -2,11 +2,16 @@ $(function () {
   // variables
   var $header_top = $(".header");
   // var $nav = $("nav");
+  var menu = $('#menu li a');
 
   // toggle menu
   // $header_top.find("a").on("click", function () {
   //   $(this).parent().toggleClass("open-menu");
   // });
+
+  menu.click(function () {
+    $('body').removeClass('menu__js');
+  });
 
   var $isAnimatedGamePlay = $(".gameplay .is-animated");
   var $isAnimatedGem = $(".gem-item .is-animated");
@@ -57,7 +62,8 @@ $(function () {
         margin: 5,
         responsive: {
           0: {
-            items: 2
+            items: 2,
+            dots: true,
           },
           600: {
             items: 3
@@ -67,12 +73,29 @@ $(function () {
           }
         },
       });
+
+      var gem_item_js = $(".gem_item_js");
+      gem_item_js.owlCarousel({
+        nav: false,
+        dots: true,
+        singleItem: true,
+        navText: [
+          "<i class='fa fa-angle-left'></i> Previous",
+          "Next <i class='fa fa-angle-right'></i>",
+        ],
+        lazyLoad: false,
+        autoplay: 300,
+        autoplaySpeed: 400,
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        slideSpeed: 100,
+        items: 1,
+        loop: true,
+        margin: 0,
+      });
     },
 
     onLeave: function (index, nextIndex, direction) {
-      console.log(index);
-      console.log(nextIndex);
-      console.log(direction);
       if (index == 5) {
         $("#fp-nav").show();
       }
