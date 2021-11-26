@@ -1588,6 +1588,7 @@ body {
     display: flex;
     width: 100%;
     align-items: center;
+    overflow: hidden;
   }
   .content__img img {
     position: relative;
@@ -1600,16 +1601,19 @@ body {
     left: 0;
     background-position: left;
   }
+  .roadmap .heading__default {
+    margin: 50px 0 0;
+  }
   .roadmap_section img {
     display: none;
   }
   .roadmap__timeline .roadmap__item {
-    position: initial !important;
+    position: relative !important;
     top: initial !important;
     bottom: initial !important;
     left: initial !important;
     right: initial !important;
-    width: 46%;
+    width: 42%;
   }
   .roadmap .heading__label {
     margin: 0 !important;
@@ -1618,26 +1622,90 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+  }
+  .roadmap__timeline:before {
+    content: '';
+    width: 2px;
+    top: 22px;
+    bottom: 0;
+    background-image: url(../images/line-vertical.png);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: contain;
+  }
+  .roadmap__item:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: linear-gradient(180deg, #FDD984 0%, #A38252 100%);
+    transform: rotate(109.32deg);
+    border-radius: 50%;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(1):before {
+    left: -34px;
+    top: 30%;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(2):before {
+    right: -15px;
+    top: 20%;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(3):before {
+    left: -34px;
+    top: 35%;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(4):before {
+    right: -15px;
+    top: 16%;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(5):before {
+    left: -34px;
+    top: 45%;
+  }
+  .roadmap__timeline .roadmap__item:nth-child(6):before {
+    right: -15px;
+    top: 20%;
   }
   .roadmap__timeline .roadmap__item:nth-child(1) {
+    margin: 20% 0 0;
     order: 6
   }
   .roadmap__timeline .roadmap__item:nth-child(6) {
-    order: 1
+    order: 1;
+    width: 48%;
   }
   .roadmap__timeline .roadmap__item:nth-child(5) {
-    order: 2
+    margin: 15% 0 0;
+    order: 2;
   }
   .roadmap__timeline .roadmap__item:nth-child(4) {
-    order: 3
+    margin: -10% 0 0;
+    order: 3;
+    width: 48%;
   }
   .roadmap__timeline .roadmap__item:nth-child(3) {
-    order: 4
+    margin: 15% 0 0;
+    order: 4;
   }
   .roadmap__timeline .roadmap__item:nth-child(2) {
-    order: 5
+    margin: -10% 0 0;
+    order: 5;
+    width: 48%;
+  }
+  .roadmap__item h3 {
+    font-size: 14px;
   }
   .roadmap__item ul li {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .team__slider {
+    padding: 0;
+  }
+  .team__item {
+    display: block;
   }
 }

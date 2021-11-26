@@ -104,9 +104,20 @@ $(function () {
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     slideSpeed: 100,
-    items: 4,
+    items: 2,
     loop: true,
     margin: 5,
+    // responsive: {
+    //   0: {
+    //     items: 2
+    //   },
+    //   600: {
+    //     items: 4
+    //   },
+    //   1000: {
+    //     items: 4
+    //   }
+    // },
   });
 
   var advisor__js = $(".advisor__js");
