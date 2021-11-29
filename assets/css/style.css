@@ -1914,6 +1914,9 @@ body {
     width: 220px;
     height: 220px;
   }
+  .gameplay .heading__intro {
+    display: none;
+  }
   .mode_image figure {
     margin: 10px auto 0;
     width: 100px;
