@@ -43,36 +43,6 @@ $(function () {
     menu: "#menu",
 
     afterLoad: function (anchorLink, index) {
-      var team__js = $(".team__js");
-      team__js.owlCarousel({
-        nav: true,
-        dots: false,
-        singleItem: true,
-        navText: [
-          "<img src='assets/images/prev.png'>",
-          "<img src='assets/images/next.png'>",
-        ],
-        lazyLoad: true,
-        autoplay: 300,
-        autoplaySpeed: 400,
-        animateIn: "fadeIn",
-        animateOut: "fadeOut",
-        slideSpeed: 100,
-        loop: true,
-        margin: 5,
-        responsive: {
-          0: {
-            items: 2,
-            dots: true,
-          },
-          600: {
-            items: 3
-          },
-          1000: {
-            items: 4
-          }
-        },
-      });
 
       var gem_item_js = $(".gem_item_js");
       gem_item_js.owlCarousel({
@@ -96,6 +66,40 @@ $(function () {
     },
 
     onLeave: function (index, nextIndex, direction) {
+      console.log(nextIndex);
+
+      if(nextIndex == 7) {
+        var team__js = $(".team__js");
+        team__js.owlCarousel({
+          nav: true,
+          dots: false,
+          singleItem: true,
+          navText: [
+            "<img src='assets/images/prev.png'>",
+            "<img src='assets/images/next.png'>",
+          ],
+          lazyLoad: true,
+          autoplay: 300,
+          autoplaySpeed: 400,
+          animateIn: "fadeIn",
+          animateOut: "fadeOut",
+          slideSpeed: 100,
+          loop: true,
+          margin: 5,
+          responsive: {
+            0: {
+              items: 2,
+              dots: true,
+            },
+            600: {
+              items: 3
+            },
+            1000: {
+              items: 4
+            }
+          },
+        });
+      }
       if (index == 5) {
         $("#fp-nav").show();
       }

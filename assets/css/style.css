@@ -1467,7 +1467,7 @@ body {
     padding: 0 20px;
   }
   .heading__intro {
-    font-size: 14px;
+    font-size: 13px;
   }
   .gameplay__item--inner {
     flex-direction: column;
@@ -1916,8 +1916,12 @@ body {
   }
   .mode_image figure {
     margin: 10px auto 0;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+  }
+  .gameplay__item--content p {
+    margin: 10px 0 0;
+    font-size: 13px;
   }
   .gem-item__content .content__info .info__item:nth-child(5) {
     left: -60% !important;
