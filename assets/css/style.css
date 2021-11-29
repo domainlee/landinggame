@@ -1029,7 +1029,7 @@ body {
   z-index: 111;
 }
 
-.video-wrapper:hover .video-control {
+.video-wrapper:hover .video-control, .video-wrapper.hover .video-control {
   opacity: 1;
 }
 .video-control {

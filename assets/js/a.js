@@ -125,5 +125,13 @@ $(function () {
     $("body").toggleClass("menu__js");
   });
 
+  $('.video-wrapper').mouseenter( function(e) {
+    $('.video-wrapper').addClass('hover');
+  }).mouseleave( function(e) {
+    $('.video-wrapper').removeClass('hover');
+  }).click( function(e) {
+    $('.video-wrapper').removeClass('hover');
+  });
+
 });
 // })(jQuery, this);
