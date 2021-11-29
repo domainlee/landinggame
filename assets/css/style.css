@@ -1552,12 +1552,12 @@ body {
     transform: translateX(0px) !important;
     text-align: right !important;
     text-indent: 0 !important;
-    border-image-source: url(../images/line.png);
-    border-image-slice: 2;
-    border-image-repeat: round;
-    border-bottom: 1px dashed;
+    background-image: url(../images/line.png);
     padding: 6px 0;
     margin: 15px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .gem-item__content .content__info .info__item:nth-child(1) {
     left: -40% !important;
