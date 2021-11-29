@@ -1910,9 +1910,9 @@ body {
     display: block;
   }
   .gameplay__image figure {
-    margin: 0 0 10px;
-    width: 250px;
-    height: 250px;
+    margin: 0 0 5px;
+    width: 228px;
+    height: 230px;
   }
   .mode_image figure {
     margin: 10px auto 0;
