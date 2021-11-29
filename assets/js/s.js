@@ -3,11 +3,11 @@ $(function () {
   var $header_top = $(".header");
   // var $nav = $("nav");
   var menu = $('#menu li a');
+  var click = $('#menu li a');
 
-  // toggle menu
-  // $header_top.find("a").on("click", function () {
-  //   $(this).parent().toggleClass("open-menu");
-  // });
+  click.click(function () {
+    $("body").removeClass("menu__js");
+  });
 
   menu.click(function () {
     $('body').removeClass('menu__js');

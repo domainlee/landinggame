@@ -111,7 +111,7 @@ body {
   padding: 15px 0;
   font-style: normal;
   font-weight: 550;
-  display: flex;
+  display: inline-block;
   align-items: center;
   color: #f9d582;
   text-transform: uppercase;
@@ -1593,6 +1593,9 @@ body {
   .gem-item__content .content__info .info__item .line {
     display: none !important;
   }
+  .gem-item__content .content__info .info__item .line img {
+    display: none !important;
+  }
   .gem-item__content {
     display: flex;
     width: 100%;
@@ -1862,6 +1865,7 @@ body {
   }
   .header, .header.upscroll, .header.downscroll {
     opacity: 0;
+    visibility: hidden;
     background-color: #101010fa !important;
   }
   .menu__js .header, .menu__js .header.upscroll, .menu__js .header.downscroll {
