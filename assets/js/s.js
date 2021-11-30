@@ -67,7 +67,11 @@ $(function () {
 
     onLeave: function (index, nextIndex, direction) {
       console.log(nextIndex);
-
+      if(nextIndex != 2) {
+        player.pauseVideo();
+      } else if(play) {
+        player.playVideo();
+      }
       if(nextIndex == 7) {
         var team__js = $(".team__js");
         team__js.owlCarousel({
