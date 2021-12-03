@@ -1855,10 +1855,26 @@ body {
     opacity: 0;
     z-index: 1001;
   }
-  .header__menu ul {
+  .header__menu > ul {
     display: flex;
     flex-direction: column;
     margin: 35px;
+  }
+  .sub-menu {
+    right: inherit;
+    display: flex;
+    top: 8px;
+    opacity: 1;
+    visibility: visible;
+    left: 50px;
+    background-color: #131312;
+  }
+  .sub-menu li {
+    padding: 0 5px;
+  }
+  .sub-menu li a {
+    color: #fbfbfb;
+    font-size: 12px;
   }
   .header__menu li {
     border-bottom: 1px solid;
@@ -1884,7 +1900,7 @@ body {
   .owl-dots > div {
     margin: 0 7px;
   }
-  .header__menu li.menu__docs, .header__menu li:last-child {
+  .header__menu > ul > li.menu__docs, .header__menu > ul > li:last-child {
     border: none;
   }
   .header__menu li a.go__app {
