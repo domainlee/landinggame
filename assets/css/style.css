@@ -667,8 +667,11 @@ body {
   margin-top: 20px;
   text-align: center;
 }
-.partner-item__inner .payment__logo img {
-  height: 136px;
+.partner__image {
+  max-width: 830px;
+  margin: 50px auto 0;
+}
+.partner__image img {
   max-width: 100%;
 }
 
@@ -744,7 +747,7 @@ body {
 
 /**Footer**/
 .partner-item__inner {
-  margin: 0 0 600px;
+  margin: 0 0 20%;
 }
 .footer__logo {
   display: block;
@@ -1380,6 +1383,13 @@ body {
     display: block;
     top: 310px;
   }
+  .partner-item__inner {
+    margin: 0 0 18%;
+  }
+  .partner__image {
+    max-width: 720px;
+    margin: 20px auto 0;
+  }
 }
 
 @media screen and (max-height: 768px) {
@@ -1905,6 +1915,9 @@ body {
   }
   .header__menu li a.go__app {
     display: inline-block;
+  }
+  .partner-item__inner {
+    margin: 0 0 80%;
   }
 }
 @media screen and (max-width: 420px) {
