@@ -674,6 +674,9 @@ body {
 .partner__image img {
   max-width: 100%;
 }
+.partner__image img.mobile {
+  display: none;
+}
 
 /**Road map**/
 .roadmap-item__inner {
@@ -1387,8 +1390,15 @@ body {
     margin: 0 0 18%;
   }
   .partner__image {
+    padding: 0 30px;
     max-width: 720px;
-    margin: 20px auto 0;
+    margin: 30px auto 0;
+  }
+  .partner__image img.desktop {
+    display: none;
+  }
+  .partner__image img.mobile {
+    display: block;
   }
 }
 
@@ -1471,7 +1481,7 @@ body {
   }
   .heading__label {
     margin: 0 0 15px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .gem-item .heading__label {
     padding: 0 20px;
