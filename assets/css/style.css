@@ -1927,7 +1927,7 @@ body {
     display: inline-block;
   }
   .partner-item__inner {
-    margin: 0 0 80%;
+    margin: 0 0 75%;
   }
 }
 @media screen and (max-width: 420px) {
